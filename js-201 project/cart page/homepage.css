@@ -1,0 +1,371 @@
+#nav img{
+    width:10%;
+}
+
+#nav{
+    display:flex;
+    justify-content: space-between;
+    border:1px solid white;
+    background-color:#301662;
+    color:white;
+   margin:auto;
+}
+#inp {
+    width:30%;
+  padding:2px;
+    border-radius:10px;
+    height:50px;
+    margin-top:15px
+}
+ #nav button{
+    padding:7px;
+    width:7%;
+    border-radius:25px;
+    margin-right: 25%;
+    background-color:#301662;
+    color:white;
+    height:30px;
+    margin-top:22px;
+    border:1px solid white
+
+ }
+
+ .nav2{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#301662;
+    color:white;
+    padding:5px
+ }
+ body{
+    background-color: white;
+    
+ }
+ h2{
+    text-align: center;
+ }
+ #banner{
+    display: flex;
+    border:0px solid black;
+    background-color: #e8eeee;
+    height:90%;
+ }
+ #banner img{
+    width:100%;
+    margin-right: 20%;
+ }
+ #text{
+    background-color: #e8eeee;
+    width:50%;
+    color:#819c6c;
+    border:0px solid rgb(170, 8, 8);
+    margin-left: 10%;
+    /* margin-top: 1%; */
+ }
+ #text button{
+    padding:7px;
+    border-radius: 7px;
+    margin-left: 42%;
+   
+ }
+ #banner1{
+   padding:7px;
+ }
+#flowerCat1{
+    /* margin-top: 12px; */
+    /* display:grid;
+    grid-template-columns: repeat(7,1fr);
+    /* gap:3px; */
+    /* text-align: center;
+    margin-bottom:2%;
+    margin-top: 2%;
+   border:1px solid black; */ 
+
+   display:grid;
+   grid-template-columns: repeat(7,1fr);
+   gap:15px;
+    text-align: center;
+    
+    margin-top: 2%;
+}
+#flowerCat1>div{
+   box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
+  
+   width:100%;
+   border:0px solid red;
+}
+#flowerCat1>div:hover{
+border:2px solid #301662;
+transform:scale(1.1);
+}
+#flowerCat1 img{
+width:100%;
+}
+#flowerCat3{
+   /* margin-top: 12px; */
+   display:grid;
+  grid-template-columns: repeat(7,1fr);
+  gap:15px;
+   text-align: center;
+   
+   margin-top: 2%;
+  
+}
+#flowerCat3>div{
+   box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
+}
+#flowerCat3>div:hover{
+border:2px solid #301662;
+transform:scale(1.1);
+}
+#flowerCat3 img{
+   width:100%;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 2%;
+}
+#flowerCat1 img{
+   width:100%
+}
+/* *{
+   margin: 0%;
+   padding:0%;
+   box-sizing:border-box;
+} */
+
+.swiper-wrapper{
+   width:100%;
+   margin:auto;
+   
+}
+.swiper{
+   width:100%;
+  height:70%;
+margin: auto;
+border:0px solid red
+}
+.swiper-slide img{
+   /* width:100%; */
+   height:70%;
+}
+.swiper-slide div{
+   width:70%;
+   margin:auto;
+   border:0px solid blue;
+   
+   
+}
+.swiper-slide{
+   display: flex;
+   /* width:90%;
+   margin:auto; */
+}
+.swiper .swiper-button-prev ,.swiper .swiper-button-next{
+   color:#fff;
+}
+.swiper .swiper-pagination-bullet-active{
+background: #fff;
+}
+img{
+   width:80%;
+}
+/* img:hover{
+   transform: scale(1.2);
+} */
+body{
+   background-color:#e8eeee;
+   border:0px solid red;
+}
+
+#middle{
+   width:100%
+}
+#container{
+   width:100%;
+   margin-right: 5%;
+   border:0px solid black;
+   margin-right: 5%;
+}
+#flower{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:5px;
+  margin-left:15%;
+  margin-top: 3%;
+  text-align: center;
+  border:0px solid black;
+  width:70%
+}
+#flower img{
+   width:100%
+}
+
+#flowerCat2{
+   /* margin-top: 12px; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:10px;
+   text-align: center;
+   margin-top: 2%;
+    border:0px solid black;
+    width:100%;
+}
+#flowerCat2>div:hover{
+/* border:2px solid #301662; */
+box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
+transform:scale(1.1);
+}
+ 
+
+#flowerCat2>div{
+   width:80%;
+   border:0px solid red;
+   box-shadow: rgba(190, 114, 100, 0.95) 0px 2px 8px 0px;
+   margin-left: 9%;
+}
+#footerOne{
+   margin-top: 3%;
+   border:0px solid black;
+   color:#301662;
+   box-shadow: rgba(153, 135, 230, 0.95) 0px 2px 8px 0px;
+}
+#bgGrey{
+   color:white;
+   border:1px solid #98a7ef;
+   background-color:#98a7ef;
+   box-shadow: rgba(65, 58, 96, 0.95) 0px 2px 8px 0px;
+}
+
+.footer{
+    margin-top: 5%;
+    /* border:1px solid blue; */
+    display:flex;
+    justify-content: space-between;
+    background-color:#301662;
+    padding:5%;
+    color:white;
+}
+
+.footer h2{
+   width:100%;
+   margin-right: 10%;
+   /* border:1px solid yellow; */
+   background-color: #4d96e3;
+   padding:7px;
+   /* box-shadow: rgba(142, 177, 13, 0.852) 0px 8px 24px; */
+}
+.footer>div:nth-child(1) p{
+    color:white;
+    /* width:250%; */
+    margin-left:5%;
+   /* border:1px solid white */
+}
+.footer>div:nth-child(2){
+    padding:7px;
+    /* background-color: white; */
+    /* border:1px solid green; */
+    width:95%;
+   height:50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+}
+#icons{
+   margin-top: 2%;
+   display:grid;
+   grid-template-columns: repeat(5,1fr);
+   gap:30px;
+   width:50%;
+   color:white;
+   margin-left: 10%;
+   width:80%;
+   border:1px solid #4d96e3;
+   padding:7px;
+}
+#pTag{
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:30px;
+   border:0px solid white;
+   width:200%;
+}
+h5{
+ padding:7px;  
+}
+#flowerCat4{
+ display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:15px;
+   text-align: center;
+   
+   margin-top: 2%;
+}
+#flowerCat4>div{
+  /* box-shadow: rgba(153, 135, 230, 0.95) 0px 2px 8px 0px; */
+  box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
+  width:100%;
+  border:0px solid red;
+}
+#flowerCat4>div:hover{
+border:2px solid #301662;
+transform:scale(1.1);
+}
+#flowerCat4 img{
+width:100%;
+}
+#yoga{
+   margin-top: 2%;
+}
+
+
+
+
+#carticon{
+    width:20px;
+}
+#cartt{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:0px;
+}
+#main{
+    position: relative;
+    display: inline-block;
+    border:0px solid rgb(0, 255, 26);
+    text-align: center;
+}
+#ddc{
+    display: none;
+    position: absolute;
+    text-decoration: underline;
+    border:0px solid red;
+    width:200%;
+   
+}
+#valen{
+   display:flex;
+
+}
+#ddc h3{
+   border:0px solid black;
+   width:100%;
+
+}
+#main:hover #ddc{
+    /* width: 115%; */
+    display: block;
+    color:white;
+    border-radius: 6px;
+    /* border: 2px solid blue; */
+    /* padding: 5px; */
+    background-color:#98a7ef;
+}
+
+#nav > div:nth-child(2){
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    color:white;
+}

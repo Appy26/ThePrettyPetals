@@ -7,10 +7,11 @@
 }
 body{
     font-family: sans-serif;
-    background-image: url("https://cdn1.harryanddavid.com/wcsstore/Celebrations/images/brand_backgrounds/18F_large.jpg");
+    background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
     background-size: 100% 100%;
     height: 100vh;
     background-attachment: fixed;
+    
 }
 .discount{
     font-family: sans-serif;
@@ -100,6 +101,8 @@ body{
     padding: 20px;
     background-color: white;
     border-radius: 20px;
+    border:1px solid black;
+    text-align: center;
 }
 .card:hover{
     cursor: pointer;
@@ -111,4 +114,91 @@ body{
     width: 308px;
     height: 346px;
     border-radius: 20px;
+   /* margin-left: 10%; */
+}
+
+/* nav */
+#nav img{
+    width:10%;
+}
+
+#nav{
+    display:flex;
+    justify-content: space-between;
+    border:1px solid white;
+    background-color:#301662;
+    color:white;
+   margin:auto;
+}
+#inp {
+    width:30%;
+  padding:2px;
+    border-radius:10px;
+    height:50px;
+    margin-top:15px
+}
+ #nav button{
+    padding:7px;
+    width:7%;
+    border-radius:25px;
+    margin-right: 25%;
+    background-color:#301662;
+    color:white;
+    height:30px;
+    margin-top:22px;
+    border:1px solid white
+
+ }
+ .footer{
+    margin-top: 5%;
+    /* border:1px solid blue; */
+    display:flex;
+    justify-content: space-between;
+    background-color:#301662;
+    padding:5%;
+    color:white;
+}
+
+.footer h2{
+   width:100%;
+   margin-left: 5%;
+   border:0px solid yellow;
+   /* background-color: #4d96e3; */
+   padding:7px;
+   /* box-shadow: rgba(142, 177, 13, 0.852) 0px 8px 24px; */
+}
+.footer>div:nth-child(1) p{
+    color:white;
+    /* width:250%; */
+    margin-left:5%;
+   /* border:1px solid white */
+   padding:2%;
+}
+.footer>div:nth-child(2){
+    padding:7px;
+    /* background-color: white; */
+    /* border:1px solid green; */
+    width:95%;
+   height:50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+}
+#icons{
+   margin-top: 2%;
+   display:grid;
+   grid-template-columns: repeat(5,1fr);
+   gap:30px;
+   width:30%;
+   color:white;
+   margin-left: 10%;
+   width:80%;
+   border:1px solid #4d96e3;
+   padding:7px;
+}
+#pTag{
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:30px;
+   border:0px solid white;
+   width:200%;
 }
