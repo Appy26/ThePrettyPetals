@@ -44,6 +44,7 @@ form.addEventListener("submit",(e)=>{
             }
 
             if(authentication){
+                localStorage.setItem("signedIn","true");
                 if(window.confirm("Registration Successful. Click 'OK' to Login")){
                     window.open(`./loginPage.html`,"_self");
                 }
@@ -65,6 +66,7 @@ form.addEventListener("submit",(e)=>{
 
             if(authentication){
                 clearInterval(errorMsg);
+                localStorage.setItem("signedIn","true");
                 if(window.confirm("Login Successful. Click 'OK' to place Orders")){
                     window.open(`./loginPage.html`,"_self");
                 }
