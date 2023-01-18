@@ -65,6 +65,8 @@ body{
 
 #nav-third-div{
    display: flex;
+   width: 15%;
+   justify-content: space-between;
 }
 /* SignedIn Part */
 #signedIn{
@@ -123,6 +125,15 @@ body{
    left: calc(100% + 32px);
    transition: 0.75s;
 }
+/* Till here */
+#nav-third-div img{
+   height: 30px;
+   width: 30px;
+}
+#nav-third-div div:hover{
+   cursor: pointer;
+}
+
 .nav2{
    display:flex;
    justify-content: space-evenly;
