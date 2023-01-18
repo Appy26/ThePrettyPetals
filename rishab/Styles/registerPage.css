@@ -1,0 +1,196 @@
+/* div{
+    border: 1px solid red;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("https://cdn1.harryanddavid.com/wcsstore/Celebrations/images/brand_backgrounds/18F_large.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 990px;
+    height: 770.2px;
+}
+
+/* Child 1 */
+.child1{
+    width: 350px;
+    height: 620px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 8px 8px 13px -5px rgba(0, 0, 0, 0.171);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 1st Div */
+.img{
+    /* width: 180.57px; */
+    width: 80%;
+    height: 130px;
+    align-self: center;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+/* 2nd Div */
+.child1-mid{
+    width: 219.81px;
+    height: 42px;
+    left: calc(50% - 219.81px/2 + 0.09px);
+    bottom: 292.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    color: rgba(74, 74, 74, 0.9);
+    align-self: center;
+}
+/* 3rd Div */
+.child1-last{
+    width: 324px;
+    height: 66px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.child1-last p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.3333px;
+    line-height: 15px;
+    color: rgba(74, 74, 74, 0.9);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Child 2 */
+
+.child2{
+    width: 420px;
+    height: 540px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    padding: 40px 40px;
+}
+.child2 h1{
+    color: #4A4A4A;
+    font-family: inherit;
+}
+.form{
+    width: 412px;
+    height: 375.84px;
+    margin-top: 20px;
+}
+.name{
+    display: flex;
+}
+.label{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 13px;
+    color: #4A4A4A;
+    display: inline-block;
+}
+input{
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 2.67px;
+    display: block;
+    margin-bottom: 20px;
+    height: 23px;
+    width: 100%;
+    padding: 4px;
+    padding-left: 9px;
+}
+input:focus{
+    outline: none;
+}
+.names{
+    display: block;
+}
+.names input{
+    height: 23px;
+    width: inherit;
+}
+#check{
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+.check-div{
+    display: flex;
+    font-size: 14px;
+    color: inherit;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+#submit{
+    height: 35px;
+    background: #5E3987;
+    border-radius: 4px;
+    color: #fff;
+}
+.form p{
+    font-size: 13.5px;
+    color: inherit;
+    font-family: inherit;
+}
+.form p span{
+    color: #4A90E2;
+}
+.form p span, #submit:hover{
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #764fa3;
+}
+
+.hr{
+    margin: 50px 0px 0px 21px;
+    width: 90%;
+    color: red;
+}
+
+.signin-google{
+    margin-top: 40px;
+    display: flex;
+    font-family: inherit;
+}
+.google{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-left: 60px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 50px;
+    width: 70%;
+}
+.google > div{
+    padding: 5px 0px 0px 30px;
+}
+.google:hover{
+    cursor: pointer;
+}
+.google img{
+    height: 30px;
+    width: 30px;
+}
