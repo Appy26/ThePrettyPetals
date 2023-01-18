@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <style>
+      /* Write all necessery css here  */
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Masai E-Commerce</h1>
+      <a href="./index.html">Home</a>
+      <a href="./cart.html">Cart</a>
+    </div>
+    <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+    <div id="cart-container">
+      <!-- Here Append All the cart Products  -->
+    </div>
+  </body>
+  <script>
+    // Write all necessery JS here 
+    let container = document.getElementById("cart-container");
+
+    let cartData = JSON.parse(localStorage.getItem("cart"));
+    if(cartData === null){
+      cartData = [];
+    }
+
+    displayProducts(cartData);
+
+    function displayProducts(data) {
+      container.innerHTML = null;
+      data.forEach((element) => {
+        let card = document.createElement("div");
+          let image = document.createElement("img");
+          image.setAttribute("src",element.img);
+
+          let brand = document.createElement("h2");
+          brand.innerText = element.brand;
+
+          let price = document.createElement("h3");
+          price.innerText = element.price;
+
+          let details = document.createElement("p");
+          details.innerText = element.details;
+
+          let category = document.createElement("p");
+          category.innerText = element.category;
+
+          let increment = document.createElement("button");
+          increment.innerText = "+";
+          let quantity = document.createElement("span");
+          quantity.innerText = element.quantity;
+          let decrement = document.createElement("button");
+          decrement.innerText = "-";
+          let Remove=document.createElement("button");
+          Remove.innerText="Remove";
+        card.append(image,brand,price,details,category,increment,quantity,decrement,Remove);
+        container.append(card);
+      });
+    }
+    
+
+   // }
+   function removeItemFromCart(name){
+    for (var i in cart){
+      if(cartData[i].name=name){
+        cartData[i].name--;
+        if(cartData[i].count===0){
+          cartData.splice(i,1);
+        }
+        break;
+      }
+    }
+    savecart();
+   }
+   
+  </script>
+</html>

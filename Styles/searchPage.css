@@ -1,0 +1,114 @@
+/* div{
+    border: 1px solid red;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    background-image: url("https://cdn1.harryanddavid.com/wcsstore/Celebrations/images/brand_backgrounds/18F_large.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.discount{
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(101, 56, 139);
+    text-align: center;
+    background-color: rgb(213, 191, 231);
+    margin-bottom: 30px;
+}
+
+/* Main Section */
+#main {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: auto;
+    
+    padding: 30px;
+}
+
+/* Filtering Div */
+.filtering{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: rgb(128, 96, 163);
+    padding: 30px 20px;
+    border-radius: 20px;
+    height: fit-content;
+    position: sticky;
+    top: 50px;
+}
+#categories{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.categories-heading{
+    height: 40px;
+    font-family: inherit;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(171, 144, 199);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+.categories{
+    margin-bottom: 15px;
+}
+.categories > div{
+    display: flex;
+    align-items: center;
+}
+.filtering > div:nth-child(2){
+    margin-top: 40px;
+}
+/* Round Boxes */
+.round-box{
+    height: 13px;
+    width: 13px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+#search-results{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin-left: 40px;
+    background-color: #d1d9f0;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+/* Card */
+.card{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card p{
+    margin: 10px 0px;
+}
+#search-results img{
+    width: 308px;
+    height: 346px;
+    border-radius: 20px;
+}
