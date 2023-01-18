@@ -43,24 +43,34 @@ form.addEventListener("submit",(e)=>{
 
     // Creating Fetch request of POST
     async function fetchReq(data){
-        let request = await fetch(`${url}register`,{
-            method:`POST`,
-            headers:{
-                "content-type":"application/json"
-            },
-            body: JSON.stringify(data)
-        })
-        let result = await request.json();
-        if(request.ok){
-            if(window.confirm("Registration Successful. Click 'OK' to Login")){
-                window.open(`./loginPage.html`,"_self");
+        try {
+            let request = await fetch(`${url}register`,{
+                method:`POST`,
+                headers:{
+                    "content-type":"application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            let result = await request.json();
+
+            if(request.ok){
+                if(window.confirm("Registration Successful. Click 'OK' to Login")){
+                    window.open(`./loginPage.html`,"_self");
+                }
+            } else {
+                setTimeout(()=>{
+                    if(window.confirm("Oops!! Looks like Backend server isn't Responding. Please Login with Admin credentials")){
+                        window.open(`./loginPage.html`,"_self");
+                    }
+                },4000)
             }
-        } else {
+        } catch (error) {
+            // console.log(error);
             setTimeout(()=>{
                 if(window.confirm("Oops!! Looks like Backend server isn't Responding. Please Login with Admin credentials")){
                     window.open(`./loginPage.html`,"_self");
                 }
-            },6000)
+            },4000)
         }
         
     }

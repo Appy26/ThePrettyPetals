@@ -1,0 +1,2 @@
+POST https://jsson-testing.onrender.com/register
+body: {"firstName": "kl","lastName": "gjh","email":"fgjgh","pass":"fgh"}

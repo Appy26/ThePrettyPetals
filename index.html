@@ -4,47 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Pretty Petals</title>
+    <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
-<div>
-   <body>
-   <div id="nav">
-<img src="The pretty petals (2).png" alt="">
-<input id="inp" type="search" placeholder="enter a flower name" >
-<button>Search</button>
-<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/msetysan.json"
-    trigger="hover"
-    colors="primary:#ffffff"
-    style="width:40px;height:40px;margin-top:1%;">
-    </lord-icon>
-   <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/bhfjfgqz.json"
-    trigger="hover"
-    colors="primary:#ffffff"
-    style="width:40px;height:40px;margin-top:1%">
-</lord-icon>
-<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/hyhnpiza.json"
-    trigger="hover"
-    colors="primary:#ffffff"
-    style="width:40px;height:40px;margin-top:1%;">
-</lord-icon>
-<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/xryjrepg.json"
-    trigger="hover"
-    colors="primary:#ffffff"
-    style="width:40px;height:40px;margin-top:1%">
-</lord-icon>
-</div> 
 
-<!-- nav2 -->
+   <body>
+
+      <!-- Navigation Bar -->
+   <div id="nav">
+      <img src="./Photos/logo1.png" alt="">
+
+      <input id="inp" type="search" placeholder="Enter Keyword or Flower name or Color" >
+
+      <div id="searchBtn">Search</div>
+
+      <!-- <script src="https://cdn.lordicon.com/fudrjiwc.js"></script> -->
+
+      <div id="nav-third-div">
+         <!-- <div id="logos">
+            
+         </div> -->
+      </div>
+      
+   </div> 
+
+<!-- Below Navigation bar -->
 
 <div class="nav2">
    <div id="main">
@@ -98,14 +83,16 @@
 
 
    <!-- text -->
-   <h2>Save up to 40% on Top flowers & gifts </h2>
+   <div class="below-nav">
+      <h2>Save up to 40% on Top flowers & gifts </h2>
+   </div>
 
    <!-- banner -->
    <div id="banner">
-      <div id="text"><h2>Make Every birthday specials descovers fresh finds flowers, personalized gifts, party essentials & more</h2> <button>Shop Now</button></div>
-   <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt0e98fd147de5199a/631a53cd10c00a57bb0cd53d/birthday-flowers-hero-fy23-fall.jpg?quality=75&auto=webp&optimize={medium}" alt=""></div>
-</div>
-
+      <div id="text"><p><span class="first-line">Make Every</span><p class="second-line">BIRTHDAY SPECIAL</p><p class="third-line">Discovers fresh finds: flowers, personalized gifts, party essentials & more.</p> <button>Shop Now</button></div>
+      <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt0e98fd147de5199a/631a53cd10c00a57bb0cd53d/birthday-flowers-hero-fy23-fall.jpg?quality=75&auto=webp&optimize={medium}" alt=""></div>
+   </div>
+<div id="content">
 <h1>Send Flowers & Exclusive Gifts</h1>
 <div id="flowerCat1">
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt5eb232318d3a6d1e/637e8388deb37610ecbb8e31/flower-delivery-same-day-silo-167891-260x284.jpeg?quality=75&auto=webp&optimize={medium}" alt=""><h3>SAME-DAY DELIVERY</h3></div>
@@ -176,7 +163,7 @@ prevEl: '.swiper-button-prev',
 <script>
 
 let button=document.querySelector("button").value;
-button.addEventListener("click", slidShow)
+button.addEventListener("click", slideShow)
 
 function slideShow(s){
 s.preventDefault()
@@ -363,7 +350,7 @@ s.preventDefault()
 
 
 
-
+<script src="./script/index.js"></script>
 </body>
 </div>
 </html>
