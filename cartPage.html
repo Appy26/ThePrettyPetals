@@ -5,185 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add to cart</title>
-    <style>
-      * {
-  box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
-    background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
-    background-size: 100% 100%;
-    height: 100vh;
-    background-attachment: fixed;
-    
-}
-        .container{
-            background-color:rgb(243, 244, 245);
-            width:100%;
-            height: 500px;
-            margin-top: 60px;
-            display: flex;
-           
-            justify-content:space-evenly;
-            
-        }
-        h1{
-          margin-left: 20px;
-        }
-        .flip-card1 {
-  background-color: transparent;
-  width: 500px;
-  height: 250px;
-  perspective: 1000px;
-  float:left;
-  margin-left: -30px;
-  border-radius: 20px;
-}
-.flip-card {
-  background-color: transparent;
-  width: 500px;
-  height: 450px;
-  perspective: 1000px;
-  float:left; 
-  border-radius: 20px;
-  margin-left: 20px;
- 
-}
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10px;
-  background-color:white;
-}
-.flip-card-inner1{
-  position: relative;
-  width: 70%;
-  height: 90%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10px;
-  background-color:white;
-}
-
-
-.flip-card-front {
-  
-  color: black;
-  
-}
-
-
-.flip-card1 img{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: start;
-    margin-left: 10px;
-  
-
-}
-.container button{
-    width: 500px;
-    height: 30px;
-    background-color: purple;
-    margin-top: -10px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: -100px;
-    align-items:flex-start;
-}
-.flip-card1 button{
-    margin-bottom: 10px;
-}
-.flip-card-front1 img{
-  height: 30px;
-  width:100px;
-  display: flex;
-  margin-left: 20px;
-  justify-content: start;
- 
-  
-  
-}
-.flip-card-front1 h3{
-        text-align: left;
-        margin-left: 20px;
-        
-      }
-.flip-card-front1 p{
-        margin-left: 20px;
-        text-align: left;
-        font-size: 13px;
-}
-      .siri{
-        border-radius: 10px;
-        height: 100px;
-        width:500px;
-        border:20px;
-        box-shadow: 0px 0px 5px 0px;
-        padding-left: 13px;
-        background-color: white;
-        
-      }
-      .siri button{
-        height:40px;
-        width:95%;
-        border: none;
-        font-size: 16px;
-        color: white;
-        
-      }
-      .flip-card-front h3{
-        text-align: left;
-        margin-left: 10px;
-      }
-      .flip-card-front hr{
-        width:500px;
-        margin-top: -15px;
-      }
-      .flip-card-front1 hr{
-        width:450px;
-        margin-top: -20px;
-      }
-      .siri1{
-        display: flex;
-        justify-content: space-between;
-        margin-left: -41px;
-        margin-bottom: -20px;
-        
-        
-        
-        
-      }
-      .siri1 button{
-        margin-top: 30px;
-        height:40px;
-        width:48%;
-        border: none;
-        font-size: 16px;
-        color: white;
-        
-      }
-      .flip-card-front1{
-        margin-left: 15px;
-        margin-bottom: -50px;
-        
-      }
-      .sri{
-        font-size: 200px;
-      }
-      
-
-    </style>
+    <link rel="stylesheet" href="./Styles/cart.css">
 </head>
 <body>
+
+  <!-- navBar -->
+  <div id="nav">
+    <img src="./Photos/logo1.png" alt="">
+    <input id="inp" type="search" placeholder="enter a flower name" >
+    <button>Search</button>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/msetysan.json"
+        trigger="hover"
+        colors="primary:#ffffff"
+        style="width:40px;height:40px;margin-top:1%;">
+        </lord-icon>
+       <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/bhfjfgqz.json"
+        trigger="hover"
+        colors="primary:#ffffff"
+        style="width:40px;height:40px;margin-top:1%">
+    </lord-icon>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/hyhnpiza.json"
+        trigger="hover"
+        colors="primary:#ffffff"
+        style="width:40px;height:40px;margin-top:1%;">
+    </lord-icon>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/xryjrepg.json"
+        trigger="hover"
+        colors="primary:#ffffff"
+        style="width:40px;height:40px;margin-top:1%">
+    </lord-icon>
+    </div> 
+
+
+<!-- Below Navigation bar -->
+
+<div class="nav2">
+ <div id="main">
+    <div id="valen"style="margin-top:14px;color:white"><h4>VALENTINE'S</h4></div>
+    <div  id="ddc">
+        <h3>ALL VALENTINE'S FLOWERS</h3>
+        <h3>VALENTINE'S BEST SELLER </h3>
+        <h3>FLOWER BEST SELLER</h3>
+     <h3>VALENTINE'S DAY BOUQUETS</h3>
+       <h3>VALENTINE'S DAY PLANTS</h3>
+      <h3>VALENTINE'S DAY ROSES</h3>
+       </div>
+       <div  id="ddc">
+          <h3>ALL VALENTINE'S FLOWERS</h3>
+          <h3>VALENTINE'S BEST SELLER </h3>
+          <h3>FLOWER BEST SELLER</h3>
+       <h3>VALENTINE'S DAY BOUQUETS</h3>
+         <h3>VALENTINE'S DAY PLANTS</h3>
+        <h3>VALENTINE'S DAY ROSES</h3>
+         </div>
+  </div> 
+
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>BIRTHDAY</h4></div>
+    <div  id="ddc">
+        <h3>ALL BIRTHDAY GIFTS</h3>
+        <h3>BIRTHDAY BEST SELLER </h3>
+        <h3>BIRTHDAY GIFT GUIDE</h3>
+     <h3>FLOWER SUBSCIPTION</h3>
+       <h3>SAME-DAY DELIVERY</h3>
+      <h3>BIRTHDAY FLOWERS</h3>
+       </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>SYMPATHY</h4></div>
+    <div  id="ddc">
+        <h3>ALL SYMPATHY GIFTS</h3>
+        <h3>FLOWERS </h3>
+        <h3>FUNERAL FLOWER</h3>
+     <h3>FLOWER SUBSCIPTION</h3>
+       <h3>FRUIT BOUQUET</h3>
+      <h3>GOURMET MEALS</h3>
+       </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>OCCASION</h4></div>
+    <div  id="ddc">
+        <h3></h3>
+        <h3>ANNIVERSARY</h3>
+        <h3>BIRTHDAY</h3>
+     <h3>CORPORATE GIFTING</h3>
+       <h3>CONGRATULATIONS</h3>
+      <h3>GET WELL</h3>
+       </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4> FRESH FLOWERS </h4></div>
+    <div  id="ddc">
+        <h3>CARNATIONS</h3>
+        <h3>2023 FLOWER OF THE YEAR</h3>
+        <h3>BEST SELLING FLOWERS</h3>
+     <h3>NEW ARRIVALS</h3>
+       <h3>FRESH FROM THE FARM</h3>
+      <h3>MONTHLY FLOWER SUBSCRIPTION</h3>
+      </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>PLANTS & FLOWERS</h4></div>
+    <div  id="ddc">
+        <h3>ALL PLANTS</h3>
+        <h3>2023 FLOWER OF THE YEAR</h3>
+        <h3>BEST SELLING FLOWERS</h3>
+     <h3>NEW ARRIVALS</h3>
+       <h3>FRESH FROM THE FARM</h3>
+      <h3>MONTHLY FLOWER SUBSCRIPTION</h3>
+      </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>GIFT BASKETS & FOOD</h4></div>
+    <div  id="ddc">
+        <h3>ALL GIFT BASKETS & FOOD</h3>
+        <h3>2023 FLOWER OF THE YEAR</h3>
+        <h3>BEST SELLERS </h3>
+     <h3>NEW ARRIVALS</h3>
+       <h3>SAME-DAY GIFT BASKETS & FOOD</h3>
+      <h3>MONTHLY FLOWER SUBSCRIPTION</h3>
+      </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>GIFTS & MORE</h4></div>
+    <div  id="ddc">
+        <h3>ALL KEEPSAKE GIFTS</h3>
+        <h3>ALL PERSONALIZED GIFTS</h3>
+        <h3>GIFT SETS </h3>
+     <h3>BEST SELLING GIFTS</h3>
+       <h3>NEW ARRIVAL</h3>
+      <h3>POSTABLE GREETING CARDS</h3>
+      </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>SAME-DAY DELIVERY</h4></div>
+    <div  id="ddc">
+        <h3>ALL SAME-DAY DELIVERY</h3>
+        <h3>FLOWER DELIVERY SAME DAY</h3>
+        <h3>GIFT BASKETS </h3>
+     <h3>BEST SELLER</h3>
+       <h3>NEW ARRIVAL</h3>
+      <h3>POSTABLE GREETING CARDS</h3>
+      <h3>LOCAL ARTISANS</h3>
+      </div>
+  </div> 
+  <div id="main">
+    <div style="margin-top:15px;color:white"><h4>COMMUNITY</h4></div>
+    <div  id="ddc">
+        <h3>EXPLORE THE COMMUNITY</h3>
+        <h3>ALICE'S TABLE WORKSHOPS</h3>
+        <h3>CONNECTION COMMUNITIES</h3>
+     <h3>FLORAL HEART PROJECT</h3>
+       <h3>SMILE FARMS BIRTHDAY!</h3>
+      <h3>VIRTUAL BACKGROUNDS</h3>
+      <h3>STAYING BACKGROUNDS</h3>
+      </div>
+  </div> 
+ </div>
     <div class="container" >
         <div>
           <div class="siri1">
@@ -244,6 +230,87 @@ body{
           </div>
         </div>
     </div>
+    <div class="footer">
+      <div id="pTag">
+          <div><h2>MORE WAYS TO STOP</h2>
+              <p>Flower Delivery Same-Day</p>
+              <p>Flower Arrangements</p>
+              <p>Sympathy Flowers & Gifts</p>
+              <p>Roses</p>
+              <p>Birthday Flower and Gifts</p>
+              <p>Flower Subscriptions</p>
+              <p>plants </p>
+              <p>Gifts baskets and foods</p>
+              <p>Valentine's Day Flowers</p>
+              <p>International Flowerr Delivery </p>
+              <!-- <p>Find a Local Florist</p>
+              <p>Corporate Gifts</p>
+              <p>Chocolate Covered Strawberries</p>
+              <p>Marketplace Sellers </p>
+              <p>Sitemap</p> -->
+          </div>
+          <div>
+              <h2>CUSTOMER SERVICE</h2>
+              <p>Visit our Support Center</p>
+              <p>Customer Service</p>
+              <p>Schedule a Service</p>
+              <p>Manage an Appointment</p>
+              <p>eGift cards</p>
+              <p>Funeral/Sympathy Advisors</p>
+              <!-- <p>Smile Guarantee</p>
+              <p>Do Not Sell My Personal Information</p>
+              <p>Contact Us</p> -->
+          </div>
+          <div>
+              <h2>CORPORATE</h2>
+              <p>ABOUT US</p>
+              <p>ADVERTISE WITH US</p>
+              <p>DEVELOPERS</p>
+              <p>OUR BRANDS</p>
+              <p>CARRIERS</p>
+              <p>SOCIAL RESPONSIBILITY</p>
+              <p>NEWS AND MEDIA</p>
+              <p>INVESTORS</p>
+              <p>CUSTOMER SERVICE</p>
+              <p>SCHEDULE A SERVICE</p>
+              <p>MANAGE AN APPOINTMENT</p>
+          </div>
+          <div>
+           
+   
+            <h2>CUSTOMER SERVICE</h2>
+            <p>VISIT OUR SUPPORT CENTER</p>
+            <p>CUSTOMER SERVICE</p>
+              <p>SCHEDULE A SERVICE</p>
+              <p>MANAGE AN APPOINTMENT</p>
+            <p>EGIFTS CARDS</p>
+            <p>FUNERAL/SYMPATHY/ADVISORS</p>
+            <p>SMILE GUARENTEE</p>
+            <p>DO NOT SELL MY PERSONAL INFORMATION</p>
+            <p>CONTACT US</p>
+   
+          </div>
+         
+      </div>
+   
+      
+      <!-- ICONS -->
+     
+      <div id="icons"><img src=".\Photos\facebook.png" alt=".\facebook.png">
+         <!-- twitter -->
+         <img src=".\Photos\twitter.png" alt="">
+         <!-- instagram -->
+         <img src=".\Photos\instagram.png" alt="">
+      
+         <!-- pinterest -->
+         <img src=".\Photos\pinterest (1).png" alt="">
+         <!-- youtube -->
+       <img src=".\Photos\youtube.png" alt="">
+   </div>
+   </div>
+   
+
+
     
 </body>
 </html>

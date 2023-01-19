@@ -1,0 +1,318 @@
+
+      * {
+  box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+        .container{
+            /* background-color:rgb(243, 244, 245); */
+            width:100%;
+            height: 500px;
+            margin-top: 60px;
+            display: flex;
+           
+            justify-content:space-evenly;
+            
+        }
+        h1{
+          margin-left: 20px;
+        }
+        .flip-card1 {
+  background-color: transparent;
+  width: 500px;
+  height: 250px;
+  perspective: 1000px;
+  float:left;
+  margin-left: -30px;
+  border-radius: 20px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 450px;
+  perspective: 1000px;
+  float:left; 
+  border-radius: 20px;
+  margin-left: 20px;
+ 
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color:white;
+}
+.flip-card-inner1{
+  position: relative;
+  width: 70%;
+  height: 90%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  /* background-color:white; */
+}
+
+
+.flip-card-front {
+  
+  color: black;
+  
+}
+
+
+.flip-card1 img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+  
+
+}
+.container button{
+    width: 500px;
+    height: 30px;
+    background-color: purple;
+    margin-top: -10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: -100px;
+    align-items:flex-start;
+}
+.flip-card1 button{
+    margin-bottom: 10px;
+}
+.flip-card-front1 img{
+  height: 30px;
+  width:100px;
+  display: flex;
+  margin-left: 20px;
+  justify-content: start;
+ 
+  
+  
+}
+.flip-card-front1 h3{
+        text-align: left;
+        margin-left: 20px;
+        
+      }
+.flip-card-front1 p{
+        margin-left: 20px;
+        text-align: left;
+        font-size: 13px;
+}
+      .siri{
+        border-radius: 10px;
+        height: 100px;
+        width:500px;
+        border:20px;
+        box-shadow: 0px 0px 5px 0px;
+        padding-left: 13px;
+        /* background-color: white; */
+        
+      }
+      .siri button{
+        height:40px;
+        width:95%;
+        border: none;
+        font-size: 16px;
+        color: white;
+        
+      }
+      .flip-card-front h3{
+        text-align: left;
+        margin-left: 10px;
+      }
+      .flip-card-front hr{
+        width:500px;
+        margin-top: -15px;
+      }
+      .flip-card-front1 hr{
+        width:450px;
+        margin-top: -20px;
+      }
+      .siri1{
+        display: flex;
+        justify-content: space-between;
+        margin-left: -41px;
+        margin-bottom: -20px;
+        
+        
+        
+        
+      }
+      .siri1 button{
+        margin-top: 30px;
+        height:40px;
+        width:48%;
+        border: none;
+        font-size: 16px;
+        color: white;
+        
+      }
+      .flip-card-front1{
+        margin-left: 15px;
+        margin-bottom: -50px;
+        
+      }
+      .sri{
+        font-size: 200px;
+      }
+      #nav img{
+    width:10%;
+}
+
+#nav{
+    display:flex;
+    justify-content: space-between;
+    border:1px solid white;
+    background-color:#301662;
+    color:white;
+   margin:auto;
+}
+#inp {
+    width:30%;
+  padding:2px;
+    border-radius:10px;
+    height:50px;
+    margin-top:15px
+}
+ #nav button{
+    padding:7px;
+    width:7%;
+    border-radius:25px;
+    margin-right: 25%;
+    background-color:#301662;
+    color:white;
+    height:30px;
+    margin-top:22px;
+    border:1px solid white
+
+ }
+
+ .nav2{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#301662;
+    color:white;
+    padding:5px
+ }
+ #main{
+    position: relative;
+    display: inline-block;
+    border:0px solid rgb(0, 255, 26);
+    text-align: center;
+}
+#ddc{
+    display: none;
+    position: absolute;
+    text-decoration: underline;
+    border:0px solid red;
+    width:200%;
+   
+}
+#valen{
+   display:flex;
+
+}
+#ddc h3{
+   border:0px solid black;
+   width:100%;
+
+}
+#main:hover #ddc{
+    /* width: 115%; */
+    display: block;
+    color:white;
+    border-radius: 6px;
+    /* border: 2px solid blue; */
+    /* padding: 5px; */
+    background-color:#98a7ef;
+}
+
+#nav > div:nth-child(2){
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    color:white;
+}
+
+#icons{
+    margin-top: 2%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:30px;
+    width:35%;
+    /* color:white; */
+    margin-left: 10%;
+    width:80%;
+    border:0px solid #4d96e3;
+    padding:7px;
+ }
+ #icons img{
+     width:90%;
+ }
+ 
+ /* Footer */
+ .footer{
+    display:flex;
+    justify-content: space-between;
+    background-color:#412b6b;
+    padding: 2% 5%;
+    color:white;
+ }
+ .footer h2{
+    width:100%;
+    margin-left: 5%;
+    font-family: sans-serif;
+    margin: 20px 0px;
+    font-weight: 400;
+    padding:7px;
+ }
+ .footer>div:nth-child(1) p{
+    color:white;
+    margin-left:5%;
+    margin-top: 20px;
+ }
+ .footer>div:nth-child(2){
+    padding:7px;
+    width:95%;
+    height:50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+ }
+ #icons{
+    margin-top: 2%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:30px;
+    width:60%;
+    color:white;
+    margin-left: 10%;
+    /* width:80%; */
+    border:1px solid #4d96e3;
+    padding:7px;
+    margin-top: 7%;
+ }
+ #pTag{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    border:0px solid white;
+    width:200%;
+ }
+   
