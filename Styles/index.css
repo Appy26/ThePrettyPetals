@@ -26,7 +26,7 @@ body{
    background-color:#301662;
    color:white;
    margin:auto;
-   padding: 10px 20px 10px 10px;
+   padding: 5px;
    align-items: center;
 }
 #logo:hover{
@@ -34,7 +34,7 @@ body{
 }
 #inp {
    width:30%;
-   padding: 2px 19px;
+   /* padding: 2px 15px; */
    border-radius:19px;
    height:50px;
 }
@@ -318,8 +318,7 @@ border:0px solid blue;
 }
 .swiper-slide{
 display: flex;
-/* width:90%;
-margin:auto; */
+
 }
 .swiper .swiper-button-prev ,.swiper .swiper-button-next{
 color:#fff;
@@ -330,9 +329,17 @@ background: #fff;
 img{
 width:80%;
 }
+<<<<<<< HEAD
 /* img:hover{
 transform: scale(1.2);
 } */
+=======
+
+body{
+background-color:#e8eeee;
+border:0px solid red;
+}
+>>>>>>> d40fcb53d8a48476dbc500c45b4da2a902556001
 
 #middle{
    width:100%
@@ -430,6 +437,7 @@ border-radius: 15px;
    border:0px solid black;
    color:#301662;
    box-shadow: rgba(153, 135, 230, 0.95) 0px 2px 8px 0px;
+<<<<<<< HEAD
 }
 #bgGrey{
    color:white;
@@ -451,9 +459,31 @@ border-radius: 15px;
    background-color:#412b6b;
    padding: 2% 5%;
    color:white;
+=======
+   /* padding:5px; */
+}
+#bgGrey{
+   color:white;
+   border:0px solid black;;
+   background-color:#98a7ef;
+   box-shadow: rgba(65, 58, 96, 0.95) 0px 2px 8px 0px;
+   padding:5px;
+   margin-bottom: 5px;
+}
+
+.footer{
+    margin-top: 5%;
+    /* border:1px solid blue; */
+    display:flex;
+    justify-content: space-between;
+    background-color:#301662;
+    
+    color:white;
+>>>>>>> d40fcb53d8a48476dbc500c45b4da2a902556001
 }
 .footer h2{
    width:100%;
+<<<<<<< HEAD
    margin-left: 5%;
    font-family: sans-serif;
    margin: 20px 0px;
@@ -471,24 +501,55 @@ border-radius: 15px;
    height:50px;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    text-align: center;
+=======
+   margin-right: 10%;
+   border:0px solid yellow;
+   /* background-color: #4d96e3; */
+   padding:7px;
+   /* box-shadow: rgba(142, 177, 13, 0.852) 0px 8px 24px; */
+   margin-top: 30%;
+}
+.footer>div:nth-child(1) p{
+    color:white;
+    /* width:250%; */
+    margin-left:5%;
+   /* border:1px solid white; */
+   padding:3px
+}
+.footer>div:nth-child(2){
+    padding:7px;
+    /* background-color: white; */
+    /* border:1px solid green; */
+    width:95%;
+   height:50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+>>>>>>> d40fcb53d8a48476dbc500c45b4da2a902556001
 }
 #icons{
-margin-top: 2%;
-display:grid;
-grid-template-columns: repeat(5,1fr);
-gap:30px;
-width:50%;
-color:white;
+   margin-top: 2%;
+   display:grid;
+   grid-template-columns: repeat(5,1fr);
+   gap:30px;
+   width:60%;
+   color:white;
+   margin-left: 10%;
+   /* width:80%; */
+   border:1px solid #4d96e3;
+   padding:7px;
+   margin-top: 7%;
 }
 #pTag{
-display:grid;
-grid-template-columns: repeat(4,1fr);
-gap:30px;
-border:0px solid white;
-width:200%;
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:30px;
+   border:0px solid white;
+   width:200%;
 }
-h5{
-padding:7px;  
+ h4{
+ padding:12px;  
+ margin-top:2px;
+ border:0px solid red;
 }
 #flowerCat4{
    display:grid;
@@ -527,22 +588,40 @@ padding:7px;
    grid-template-columns: repeat(2,1fr);
    gap:0px;
 }
+
+#nav > div:nth-child(2){
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:15px;
+   color:white;
+}
+
+
+
+/* nav2 styling */
 #main{
    position: relative;
    display: inline-block;
-   
+   border:0px solid rgb(0, 255, 26);
+   text-align: center;
 }
 #ddc{
    display: none;
    position: absolute;
    text-decoration: underline;
    border:0px solid red;
-   width:200%
+   width:200%;
+   padding:5px;
+  
+}
+#valen{
+  display:flex;
+
 }
 #ddc h3{
-border:0px solid black;
-width:100%;
-
+  border:0px solid black;
+  width:100%;
+padding:3px
 }
 #main:hover #ddc{
    /* width: 115%; */
@@ -552,30 +631,4 @@ width:100%;
    /* border: 2px solid blue; */
    /* padding: 5px; */
    background-color:#98a7ef;
-}
-/* #nav h3{
-   text-decoration: underline;
-   color:white;
-}
-#nav h3:hover{
-   color:#ffe000
-} */
-/* .nav2 p:hover{
-
-   text-decoration: underline;
-   color:#ffe000
-}
-#flex{
-   width:50%;
-   display:flex;
-   justify-content: space-around;
-} */
-/* #nav{
-   border:1px solid #7b9fdd
-} */
-#nav > div:nth-child(2){
-   display:grid;
-   grid-template-columns: repeat(3,1fr);
-   gap:15px;
-   color:white;
 }
