@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 
-   <body>
+   <body id="body">
 
       <!-- Navigation Bar -->
    <div id="nav">
-      <img src="./Photos/logo1.png" alt="">
+      <img src="./Photos/logo1.png" alt="" onclick="location.href=`./index.html`" id="logo">
 
       <input id="inp" type="search" placeholder="Enter Keyword or Flower name or Color" >
 
       <div id="searchBtn">Search</div>
-
-      <!-- <script src="https://cdn.lordicon.com/fudrjiwc.js"></script> -->
 
       <div id="nav-third-div">
          <!-- Login Authentication check here -->
@@ -31,7 +29,7 @@
 
 <div class="nav2">
    <div id="main">
-      <div style="margin-top:15px;color:white"><h4>VALENTINE's</h4></div>
+      <div><h4>VALENTINE's</h4></div>
       <div  id="ddc">
           <h3>All Valentines's Flowers & Gifts</h3>
           <h3>Valentines's Best Seller </h3>
@@ -46,7 +44,7 @@
           <h3></h3>
           <h3></h3>
       </div>
-    </div> 
+   </div> 
 
    <h4>BIRTHDAY</h4>
    <h4>SYMPATHY</h4>
@@ -91,20 +89,20 @@
       <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt0e98fd147de5199a/631a53cd10c00a57bb0cd53d/birthday-flowers-hero-fy23-fall.jpg?quality=75&auto=webp&optimize={medium}" alt=""></div>
    </div>
 <div id="content">
-<h1>Send Flowers & Exclusive Gifts</h1>
+<h1 class="send-flowers">Send Flowers & Exclusive Gifts</h1>
 <div id="flowerCat1">
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt5eb232318d3a6d1e/637e8388deb37610ecbb8e31/flower-delivery-same-day-silo-167891-260x284.jpeg?quality=75&auto=webp&optimize={medium}" alt=""><h3>SAME-DAY DELIVERY</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltaaf1443ffe30236a/601d6d92f13a6d4c0c256dba/classic-all-white-arrangement-sympathy-95097-silo-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>SYMPATHY</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt26149ee749ecd0f3/62b5c27fa7c4490fd2ef03ef/magnificent-preserved-roses-silo-156623-260x284.jpeg?quality=75&auto=webp&optimize={medium}" alt=""><h3>LOVE & ROMANCE</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt867d5477b7adc192/627be2023debbf3afdd2ea1e/get-well-flowers-146761-silo-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>GET WELL</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt358c381bc15c10ef/63bdb18a2effe86502073b30/chocolate-covered-strawberries-delivery-silo-192546-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>STRAWBERRIES</h3></div>
-   <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt180dd3fd2c5f4596/63bdb1a3ee0cf115ce1fc07c/just-because-flowers-silo-90577mprsv1-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>JUST BECAUSE</h3></div>
+   <!-- <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt180dd3fd2c5f4596/63bdb1a3ee0cf115ce1fc07c/just-because-flowers-silo-90577mprsv1-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>JUST BECAUSE</h3></div> -->
    <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>BOUQUETS</h3></div>
 </div>
 
 <!-- slider -->
 
-<h1>Recommended for you</h1>
+<h1 class="recommended">Recommended for you</h1>
 <div id="container">
    <div class="swiper">
        <!-- Additional required wrapper -->
@@ -112,7 +110,7 @@
          <!-- Slides -->
          <div class="swiper-slide"><div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191167xltoppicksnipex.jpg?height=378&width=345&sharpen=a0.5,r1,t1?quality=75&auto=webp&optimize={medium}" alt="">
       </div>
-   <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/174313lbx.jpg?height=378&width=345&sharpen=a0.5,r1,t1?quality=75&auto=webp&optimize={medium}" alt="">
+      <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/174313lbx.jpg?height=378&width=345&sharpen=a0.5,r1,t1?quality=75&auto=webp&optimize={medium}" alt="">
        </div>
        <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/100551mv24b1bl19ck16x.jpg?height=378&width=345&sharpen=a0.5,r1,t1?quality=75&auto=webp&optimize={medium}" alt="">
       </div><div><img src="https://cdn1.fruitbouquets.com/wcsstore/Flowers/images/catalog/176935x.jpg?height=378&width=345&sharpen=a0.5,r1,t1?quality=75&auto=webp&optimize={medium}" alt="">
@@ -127,9 +125,7 @@
        <!-- If we need navigation buttons -->
        <div class="swiper-button-prev"></div>
        <div class="swiper-button-next"></div>
-     
-       
-     </div>
+   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
@@ -178,21 +174,21 @@ s.preventDefault()
 
 
 <h1>Offer Comfort With Sympathy Flowers & Gifts</h1>
-<div id="flowerCat1">
+<div id="flowerCat2">
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt2a407a6a54d38487/63c1ce615156964aea4347db/funeral-arrangements-silo-148752-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>FUNERAL ARRANGEMENTS</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt29d030cbcfd4ab4e/61ce05c18ae3ee7d4c156b19/classic-all-white-arrangement-sympathy-95097-silo-260x284.jpeg?quality=75&auto=webp&optimize={medium}" alt=""><h3>FOR THE FAMILY</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltea2dacf314796c21/63c1ce906bf00e62d437f92d/sympathy-plants-silo-101980-260x284.jpeg?quality=75&auto=webp&optimize={medium}" alt=""><h3>SAME-DAY DELIVERY</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt7c9e9d4a2198fa1e/63c1ceb606d8a07b811ae1e3/sympathy-same-day-delivery-silo-148685-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>GIFTS BASKET</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt5dcd51ccaacd3721/63c1ceef881b107c49c5e885/gift-baskets-sympathy-silo-96275dx-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>PLANTS</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt1e51da89f5d53b69/63c1cf15e6cd4a7779d9f21b/sympathy-remembrance-gifts-silo-97343l-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>REMEMBERENCE GIFTS</h3></div>
-   <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>BOUQUETS</h3></div>
+   <!-- <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>BOUQUETS</h3></div> -->
 </div>
 
 
  <div  id="yoga"><img style="width: 100%;height:350px;border-radius: 10px;"src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/bltfc69d1be54851e61/63a5bbef81b6d37de803b31d/gift-more-marketplace-winter-edit-hero.jpg?quality=75&auto=webp&optimize={medium}" alt=""></div> 
 
 
- <h1>Explore Our Self-Care Essentials</h1>
+ <h1 class="trending">Explore Our Self-Care Essentials</h1>
 <div id="flowerCat1">
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt83c25a21462cccea/63a61e2e9233961262fbbcfe/spa-gift-basket-silo-mk012144-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>SPA GIFTS</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt8ccd8ba5f57bb6c5/63a61e6a66600623830ad5b8/candle-gifts-lanterns-silo-mk021324-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>CANDLES & LALTERNS</h3></div>
@@ -200,12 +196,12 @@ s.preventDefault()
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt0c60554654188a74/63a61ee81d30ec7c2c531c79/zen-gifts-for-relaxation-silo-mkq016474-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>ZEN & RELAXATIONS</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt9f97ed604bf1a128/63a61f39609d40109bf54fe8/lavender-flowers-gifts-silo-155227-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>LAVENDER GIFTS</h3></div>
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt590656ac79c533bf/63a630b99233961262fbbd0a/cozy-comfort-gifts-silo-mk005330-260x284.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>COZY COMFORTS</h3></div>
-   <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Bouquets</h3></div>
+   <!-- <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Bouquets</h3></div> -->
 </div>
 
 
 
-<h1>Trending Flowers & Gifts</h1>
+<h1 class="trending">Trending Flowers & Gifts</h1>
 <div id="flowerCat3">
    <div><img src="https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191167xltoppicksnipez.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Floral Embrace</h3><h4>Starting From $39.99</h4></div>
    <div><img src="https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/191168xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Day-Dream Bouquet</h3><h4>Starting From $49.99</h4></div>
@@ -213,7 +209,7 @@ s.preventDefault()
    <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191252xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Garden of Gandeur</h3><h4>Starting From $53.99</h4></div>
    <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/90926mrdv4ch31z.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Two Dozen Red Rose</h3><h4>Starting From $39.99</h4></div>
    <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/158086lgwcz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Floral Embrace</h3><h4>Starting From $39.99</h4></div>
-   <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Floral Embrace</h3><h4>Starting From $39.99</h4></div>
+   <!-- <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/191173xlz.jpg?quality=75&auto=webp&optimize={medium}" alt=""><h3>Floral Embrace</h3><h4>Starting From $39.99</h4></div> -->
 </div>
 
 
@@ -221,7 +217,7 @@ s.preventDefault()
 
 
 
-<h1> #MadeMeSmile Flowers Moment</h1>
+<h1 class="trending">Share Your <b>#MadeMeSmile</b> Flowers Moment</h1>
 <div id="flowerCat4">
    <div><img src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blte2a16fdd5ffe3f9b/63a6027fd70a0827292d3e8f/ugc-image-charming-garden-bouquet.jpg?quality=75&auto=webp&optimize={medium}" alt="">
    </div>
@@ -232,8 +228,8 @@ s.preventDefault()
 </div>
 
 
-<h1> Some of the Great Things Our Customers Say About Us</h1>
-<div id="flowerCat2">
+<h1 class="trending"> Some of the Great Things Our Customers Say About Us</h1>
+<div id="flowerCat5">
    <div><img style="width:30%"src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt4c9be4e2d955776a/602a81580aba282006983f75/hp-reviews-final-167891.png?quality=70&auto=webp&optimize={medium}" alt="">
    <h2>Beautiful</h2><p>⭐⭐⭐⭐⭐</p><h3>"I brought these for my Nana's birthday and she said they were amazingly beautiful!!"</h3><h2>-Adarsh</h2></div>
    <div><img  style="width:30%"src="https://images.contentstack.io/v3/assets/bltdd99f24e8a94d536/blt2b874f93791fce4a/62b09064482ba357e65ddbe8/web_icons_125x125_ocean_breeze_orchids.png?quality=70&auto=webp&optimize={medium}" alt=""><h2>Best Flowers</h2> <p>⭐⭐⭐⭐⭐</p><h3>These flowers are beautiful and just as vibrant as the picture.one of the most beautiful bouquets</h3><h2>-Harsh</h2></div>
@@ -243,7 +239,7 @@ s.preventDefault()
 
 
 <!-- footer part -->
-<div id="footerOne">
+<!-- <div id="footerOne">
 <div id="bgGrey"><h3>Send Flowers Online with Flower Delivery by 1-800-Flowers.com, the World's Favorite Florist!</h3></div>
 <div><h5>There's no better place to order flowers online than 1-800-Flowers.com. Whether you're looking to buy flowers and gifts like roses, orchids, gift baskets, bonsai trees, flowering plants or wedding bouquets, we have the highest quality blooms and the most talented florists who can create exactly what you order. Dazzle and delight your loved ones wherever they may be with truly original flowers and gifts from 1-800-Flowers.com.</h5></div>
 
@@ -269,11 +265,11 @@ s.preventDefault()
 <div><a href="https://www.1800flowers.com/blog/everyday-moments/coping-with-loss/what-to-write-in-a-sympathy-card/"><ul><li>Thoughful sympathy card message ideas</li></ul></a></div>
 <div><a href="https://www.1800flowers.com/blog/julie/how-tos/how-to-preserve-flowers-with-wax/"><ul><li>Zodaic flowers by your sign</li></ul></a></div>
 
-</div>
+</div> -->
 
 
 <!-- lastfooter -->
-
+</div>
 <div class="footer">
    <div id="pTag">
        <div><h2>MORE WAYS TO STOP</h2>
@@ -287,11 +283,11 @@ s.preventDefault()
            <p>Gifts baskets and foods</p>
            <p>Valentine's Day Flowers</p>
            <p>International Flowerr Delivery </p>
-           <p>Find a Local Florist</p>
+           <!-- <p>Find a Local Florist</p>
            <p>Corporate Gifts</p>
            <p>Chocolate Covered Strawberries</p>
            <p>Marketplace Sellers </p>
-           <p>Sitemap</p>
+           <p>Sitemap</p> -->
        </div>
        <div>
            <h2>CUSTOMER SERVICE</h2>
@@ -301,9 +297,9 @@ s.preventDefault()
            <p>Manage an Appointment</p>
            <p>eGift cards</p>
            <p>Funeral/Sympathy Advisors</p>
-           <p>Smile Guarantee</p>
+           <!-- <p>Smile Guarantee</p>
            <p>Do Not Sell My Personal Information</p>
-           <p>Contact Us</p>
+           <p>Contact Us</p> -->
        </div>
        <div>
            <h2>CORPORATE</h2>
@@ -343,8 +339,8 @@ s.preventDefault()
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
 
 </div>
-   </div>
 </div>
+
 
 
 
