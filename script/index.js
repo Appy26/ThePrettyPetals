@@ -54,6 +54,5 @@ function Search() {
 
     btn.addEventListener("click",()=>{
         localStorage.setItem("search",JSON.stringify(search.value));
-        btn.onclick="location.href=`./searchPage.html`";
     })
 }

@@ -95,13 +95,41 @@ body{
     gap: 20px;
     border-radius: 20px;
 }
+#pagination{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#pagination button{
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    border: none;
+    background-color: rgb(184, 162, 207);
 
+}
+#pagination button:hover{
+    cursor: pointer;
+}
 /* Card */
 .card{
     padding: 20px;
     background-color: white;
     border-radius: 20px;
+
+
     border:0px solid black;
+
     text-align: center;
 }
 .card:hover{

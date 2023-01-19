@@ -34,7 +34,7 @@ body{
 }
 #inp {
    width:30%;
-   /* padding: 2px 15px; */
+   padding: 0px 30px;
    border-radius:19px;
    height:50px;
 }
