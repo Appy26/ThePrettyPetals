@@ -79,19 +79,21 @@ if(searchKeyword){
 } else {
     searchResult(1);
 }
+//?_limit=12&_page=${i}
 
 // Default Search Result
 async function searchResult(i) {
-    let request = await fetch(`${url}products?_limit=12&_page=${i}`);
+    let request = await fetch(`${url}products`);
     let result = await request.json();
     Data = result;
     console.log(result);
     createDOM(result);
 }
+//?_limit=12&_page=1
 
 // If search input is given in homepage/indexPage
 async function searchResultCertainCondition() {
-    let request = await fetch(`${url}products?_limit=12&_page=1`);
+    let request = await fetch(`${url}products`);
     let result = await request.json();
     Data = result;
     let newResult = result.filter(el=>{
@@ -108,6 +110,7 @@ async function searchResultCertainCondition() {
 // Search Input functionality
 document.getElementById("inp").addEventListener("keyup",(e)=>{
     let keyWord = e.target.value;
+    console.log(keyWord);
     let newResult = Data.filter(el=>{
         if(el.name.toLowerCase().includes(keyWord) || el.color.toLowerCase().includes(keyWord)){
             return true;
@@ -116,6 +119,7 @@ document.getElementById("inp").addEventListener("keyup",(e)=>{
     });
     filterAppliedData = newResult;
     isFilterApplied = true;
+    console.log(newResult);
     createDOM(newResult);
 });
 
@@ -170,5 +174,4 @@ function pagination() {
     }
     
 }
-=======
 
