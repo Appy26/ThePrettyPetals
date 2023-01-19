@@ -241,17 +241,20 @@ input:focus{
     text-align: center;
 }
 #icons{
-   margin-top: 2%;
-   display:grid;
-   grid-template-columns: repeat(5,1fr);
-   gap:30px;
-   width:30%;
-   color:white;
-   margin-left: 10%;
-   width:80%;
-   border:1px solid #4d96e3;
-   padding:7px;
-}
+    margin-top: 2%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:30px;
+    width:35%;
+    color:white;
+    margin-left: 10%;
+    width:80%;
+    border:0px solid #4d96e3;
+    padding:7px;
+ }
+ #icons img{
+     width:90%;
+ }
 #pTag{
    display:grid;
    grid-template-columns: repeat(4,1fr);

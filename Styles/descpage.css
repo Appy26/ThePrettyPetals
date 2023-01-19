@@ -80,22 +80,29 @@
     background-color:#98a7ef;
 }
 #cont{
-    display:flex;
-    margin-left:15%;
+     /* display:flex; */
+    margin-left:20%; 
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    border:0px solid red;
+    width:50%;
 }
 #cont>div:nth-child(1) img{
     width:100%;
+    height:100%
 }
 #cont>div:nth-child(1){
-    width:30%;
+    /* width:30%; */
     border:0px solid black;
-    margin-left:10%
+    margin-left:10%;
+    box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
 }
 
 #cont>div:nth-child(2){
-width:30%;
+/* width:30%; */
 border:0px solid red;
-color:black;
+color:purple;
 font-style:normal;
 padding:4px;
 box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
@@ -209,4 +216,14 @@ box-shadow: rgba(95, 77, 177, 0.95) 0px 2px 8px 0px;
 }
 h5{
  padding:7px;  
+}
+/* body{
+   background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
+} */
+body{
+   margin-left: 5%;
+   font-family: sans-serif;
+   margin: 20px 0px;
+   font-weight: 400;
+   
 }
