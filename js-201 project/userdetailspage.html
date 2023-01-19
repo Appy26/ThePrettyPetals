@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History page</title>
+    <style>
+          * {
+  box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+.container{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 450px;
+  perspective: 1000px;
+  float:left; 
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-top: -150px;
+ 
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color:pink;
+}
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color:pink;
+  margin-top: -150px;
+}
+
+
+.flip-card-front{
+    margin-top: 200px;
+    margin-left: -30px;
+}
+.siri{
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+
+.flip-card-front{
+    margin-top: 200px;
+    margin-left: 500px;
+    
+}
+.flip-card-front1 img{
+    width:50px;
+    height: 50px;
+    text-align: center;
+
+}
+.flip-card-front1 h3,p{
+    margin-left: 30px;
+    text-align: left;
+    margin-top: 50px;
+}
+.flip-card-front1 button{
+    height:30px;
+    width:90%;
+    background-color:purple ;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.flip-card-front1 h2{
+    text-align: center;
+}
+
+.flip-card-front p{
+    margin-top: 20px;
+    
+
+}
+.mail{
+    display: flex;
+   
+}
+.phone{
+    display: flex;
+}
+.mail img{
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    padding: 2px;
+    margin-top: -10px;
+}
+.phone img{
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    padding: 2px;
+    margin-top: -12px;
+
+}
+.flip-card-front button{
+    margin-top: -300px;
+    width:400px;
+    height: 30px;
+    margin-left: -400px;
+}
+.flip-card-inner1 img{
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="flip-card">
+                <div class="siri">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front1">
+                    <img src="https://joyful-malasada-2d0d65.netlify.app/Photos/user.png">
+                     <h2 style="margin-top:20px">Shireesha</h2> 
+                    <h3 style="margin-top:60px">Contact Details </h3>
+                    <div class="mail">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAGQAZAMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAAAgEGBwUEAwj/xAA8EAABAwEDBwkHAgcBAAAAAAABAAIDBAUGERIhMUFRUnITMzZhcZGhssEHFCJzdIGxwuEjMkNTZJLwJv/EABsBAQADAQEBAQAAAAAAAAAAAAAEBQYDAQIH/8QAMxEBAAECAwQIBQMFAAAAAAAAAAECAwQFESExNEESMjNRcXKx0QYigZHwYsHhI1JhkqH/2gAMAwEAAhEDEQA/ANxQCCCQNJAQRyjN5vegjlG7wQHKN2hAco3aEByjdoQHKM3ggkPadDh3oGQCAQCBHEk5LfudiADAM5znaUDoBAIBAIBBBAIwIB7UCFpZnZo3UDtOUAQglBBOAxKBYx8OJ0nOUDoBAIBAIBAIBAIEbmkI1HOEDoEl5t3YUDoKhfa+jbtyw0sFMKiqkbyhDnZLWMxIBO0kg5upRsRiYs6RprK4yvKZx0TXVVpTGz6vTdq99Fb8WEBEVU0YyUzz8Q6xvDrH3wX3av03Y2b3DH5ZfwVXz7aeU8v4l3PeXboXZXD3l26EB7y7dCA95duhBD6zk2OfJkNY0Yuc44ADaUmdHsRMzpCjWt7T6emr2xWfSe907T/Ely8jK4M2ftP7qDcx1NNWkRq0WG+Hbty30rtXRnlG/wC/cvtFUxVlHBVQOyopo2yMJGGLSMQptMxVGsM/ct1Wq5oq3xOn2fQ863hPovXwdAsvNu4SgZBjPtffk3shGr3GPzyKrx1OtcNl8PV9HCzH6p9IVKB0sEsU0TpIpBg+N4xaRsIPqocdKmdV/PQuUzE6THP2lo92L9NkDaW3XNY/Q2rAwa7jGo9ejsVlZxevy3PuymY5DNOtzC7Y/t5/Tv8ADf4r0CHAFpBBzgjQVOZnclB4LYteisem5eulyQczGDO552ALncuU241qSsJg72Lr6FqPaPFlV6Lz11vPMbzyFEDi2nYdOGtx1nwHiqq/iKrmzk22X5XZwcaxtr7/AG7lalcYsAWkEgOGIwxGo9ij9Geawqu0xufoO55xunYx/wAGHyBXtrs4fnOOnXFXJ/VPq6p51vCfRdEUyBZebdwlAyDFvbH0sh+hj88ircZ14a7IeFnzT6QtF3bEobbuPZcNfFiRCciVuZ7DlHQfTQpFFqm5aiKlXiMbewmPuVWp57Y5T4qfb92q2wpC6UcrSk4MqGDN1Bw1FQrtiq1v2x3tLgc0s4yNI2Vd3t3/ALPRdy9FZYrmwuxnosc8Djnb1tOrs0di9s4iq3s3w55hlVrGR0o+Wvv9/wA1Wm1790UNI02WPeKmRuID2kNj4tp6h3qVcxdMR8m2VHhMhvV3P6/y0x/3w91BqqistWt5Sd8lRUynAayeoDYoEzVcq27Zaq3RZwtrSnSmmFlsS6kcRbUWoBJLpbDpa3i2nw7VNs4OI21s1mOe1V628Nsjv5/Tu9VXv6P/AEk3y2fhcMX2kp+S8JHjLabn9E7G+hh8gVja6kMtjuKueafV1jzreE+i6IpkCy827hKBkGLe2PpZB9DH55FW4zrtfkHCz5p9IXm4fQ+y/k/qKm2Ozhn804y54u7Ixksbo5WNexwwc1wxBGwhdZ2oNNU0zFUTtUK8lx3R5VVYgym6XUpOccBP4P22KBewnO39moy/PddLeJ/29/f7qtZtk1lozOjijLAw4SPkBAYdh6+pRrdmu5OkLnF5hYwlHSqnXXdEc/4/yvNkWPS2XH/BGXK4fHM7+Y9Q2DqVnas02o2b2Lx2Y3sZV8+yOUfm/wDNHQXZAZdf7pLN8tn4VTi+1ltMl4Onxn1bTc/onY30MPkCsbXUhlsdxVzzT6usedbwn0XRFMgWXm3cJQMgxf2x9LIPoY/PIq3Gddr8g4WfNPpC8XC6H2X8n9RU2x2cM/mnGXPF311QAg+FRSxzjH+V+8PVBzJoJIXYPb2EaCvXj54IMuv90mm+XH+FU4vtZbXJeDp8ZbRc7onY30MPkCsbXUhlcdxVzzT6usedbwn0XRFMgWXm3cJQMgxv2ywSsvFS1L2EQyUjWNfqLmucSO5w71XYyJ6US1vw/XTNiqiN8T+0LpcPofZfyv1FTLHZQos04y54u+uqvCAQQ4Nc3JcAWnUUHgnoS34ocSN06QgyC/3SiZusxxgDWcyq8VtutrkvBR4y227EEtLduyqeoYWTRUcTHsOlrgwAhWNuNKIiWSxddNeIrqp3TM+ronnW8J9F9o5kCvGLCNoQS05QBGtB856eGoZkVEUcrN17Q4dxXkxrve01TTOsSmKnhhYI4YmMYNDWtAA+y9iNCZmZ1k2S3YO5HgyW7B3IDJbsHcgMluwdyAyG7o7kHxNDSGflzSwmb+5yYyu9eaRrq+orqiOjE7HoGZevkn9UdTf+/CB0AgRvwHJOjUgdAIBAIBAIBAIIc4NGJQQwaXHSUDIBBBAcMCMQgXB40HHtQGL90f7fsgnF+54oDF+54oDF+54oDF+54oIxfujvQGL9jR98UEhmfFxxP4QMgEAgEAgEAgEAgEAgEAgEAg//2Q==">
+                    <p style="margin-top:-10px;margin-left: 2px;" >siri@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8y7KUEAQzEFTszxxbOsGqfW8hKQHjA5_qUpih50JRZIBFBUuU&usqp=CAU">
+                    <p style="margin-top:-10px;margin-left: 2px;">9347028527</p>
+                    </div>
+                    <button>Sign Out</button>
+                    
+              
+                    
+                  </div>
+               
+                </div>
+         </div>
+        </div>
+            <div class="flip-card1">
+                <div class="flip-card-inner1">
+             <div class="flip-card-front">
+                
+                
+                 </div>
+                
+          </div>
+              
+           
+            
+     </div>
+    </div>
+</div>
+</body>
+
+    
+</body>
+</html>
