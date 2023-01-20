@@ -1,11 +1,11 @@
-const cont = document.getElementById("nav-third-div");
+const checkingIfSignedIn = document.getElementById("nav-third-div");
 // Checking if signedIn
 signedIn()
 function signedIn() {
     let signedIn = localStorage.getItem("signedIn");
 
     if(signedIn == "true"){
-        cont.innerHTML = null;
+        checkingIfSignedIn.innerHTML = null;
         let div1 =document.createElement("div");
         let div2 = document.createElement("div");
         let div3 = document.createElement("div");
@@ -27,10 +27,10 @@ function signedIn() {
         div2.append(img2);
         div3.append(img3);
         div4.append(img4);
-        cont.append(div1,div2,div3,div4);
+        checkingIfSignedIn.append(div1,div2,div3,div4);
         
     } else {
-        cont.innerHTML = null;
+        checkingIfSignedIn.innerHTML = null;
         let btn1 = document.createElement("button");
         btn1.setAttribute("id", "loginBtn");
         btn1.setAttribute("onclick", "location.href=`./loginPage.html`");
@@ -42,9 +42,9 @@ function signedIn() {
         btn1.innerText = "Login";
         btn2.innerText = "Register";
 
-        cont.style.marginRight = "7%"
+        checkingIfSignedIn.style.marginRight = "7%"
 
-        cont.append(btn1,btn2);
+        checkingIfSignedIn.append(btn1,btn2);
     }
 }
 
@@ -58,4 +58,29 @@ function Search() {
     btn.addEventListener("click",()=>{
         localStorage.setItem("search",JSON.stringify(search.value));
     })
+}
+
+let productData = JSON.parse(localStorage.getItem("product"));
+const cont = document.getElementById("container");
+
+createDOM();
+function createDOM() {
+    cont.innerHTML = null;
+    let div1 = document.createElement("div");
+    let div2 = document.createElement("div");
+    let img = document.createElement("img");
+    img.src = productData.image;
+
+    div2.innerHTML = `
+    <div><h3>Description</h3>
+    <p>Adenium is a genus of flowering plants in the family Apocynaceae first described as a genus in 1819. It is native to Africa and the Arabian Peninsula</p></div>
+    <h3>Highlights</h3>
+    <ul><li><p><span>Plant Name</span>: ${productData.name}</p></li></ul>
+    <ul><li> <p><span>Type</span>: Flower</p></li></ul>
+    <ul><li> <p><span>Suitable Location</span>: Indoor</p></li></ul>
+    <ul><li><p><span>Height</span>: 180 mm</p></li></ul>
+    <div id="button"><button class="cart-wishlist" data-id="wishlist">Add to Wishlist</button><button data-id="wishlist" class="cart-wishlist">Add to Cart</button></div>`
+
+    div1.append(img);
+    cont.append(div1,div2);
 }

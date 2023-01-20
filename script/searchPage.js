@@ -1,7 +1,7 @@
 // navigation bar
 const CheckingIfLogIn = document.getElementById("nav-third-div");
 // Checking if signedIn
-signedIn()
+
 function signedIn() {
     let signedIn = localStorage.getItem("signedIn");
 
@@ -45,10 +45,7 @@ function signedIn() {
         CheckingIfLogIn.append(btn1,btn2);
     }
 }
-
-
 // Search input part
-Search();
 function Search() {
     let search = document.getElementById("inp");
     let btn = document.getElementById("searchBtn");
@@ -59,19 +56,23 @@ function Search() {
     })
 }
 
-
-
-
 const url = `https://jsson-testing.onrender.com/`;
 const cont = document.getElementById("search-results");
 let searchKeyword = JSON.parse(localStorage.getItem("search"));
-let Data;
-let filterAppliedData;
-let isFilterApplied = false;
+let Data; // 12 products of present page
+let filterAppliedData; // testing purpose
+let allData; // all data of products = 50
+let isFilterApplied = false; // testing purpose
+
+// All Data of API
+fetch(`${url}products`).then(res=>res.json()).then(original=>allData = original);
 
 // All Functions Calling
+signedIn();
+Search();
 Sort();
-pagination()
+pagination();
+filter();
 
 // Search Functionality
 if(searchKeyword){
@@ -79,17 +80,14 @@ if(searchKeyword){
 } else {
     searchResult(1);
 }
-//?_limit=12&_page=${i}
 
 // Default Search Result
 async function searchResult(i) {
-    let request = await fetch(`${url}products`);
+    let request = await fetch(`${url}products?_limit=12&_page=${i}`);
     let result = await request.json();
     Data = result;
-    console.log(result);
     createDOM(result);
 }
-//?_limit=12&_page=1
 
 // If search input is given in homepage/indexPage
 async function searchResultCertainCondition() {
@@ -110,32 +108,86 @@ async function searchResultCertainCondition() {
 // Search Input functionality
 document.getElementById("inp").addEventListener("keyup",(e)=>{
     let keyWord = e.target.value;
-    console.log(keyWord);
-    let newResult = Data.filter(el=>{
+    let newResult = allData.filter(el=>{
         if(el.name.toLowerCase().includes(keyWord) || el.color.toLowerCase().includes(keyWord)){
             return true;
         }
         return false;
     });
     filterAppliedData = newResult;
-    isFilterApplied = true;
-    console.log(newResult);
+    if(!keyWord){
+        searchResult(1);
+        return;
+    }
     createDOM(newResult);
 });
 
 // Sorting Functionality
-
 function Sort() {
     let H2L = document.getElementById("H2L");
+    let L2H = document.getElementById("L2H");
+    let round_box = document.getElementsByClassName("round-box")
     H2L.addEventListener("click",()=>{
-        if(isFilterApplied){
-            console.log(filterAppliedData);
-            filterAppliedData.Sort(a,b=>(a.price-key) - (b.price-key));
-            console.log(filterAppliedData);
+        for(let el of round_box){
+            el.style.backgroundColor = "#fff";
         }
+        H2L.style.backgroundColor = "rgb(128, 96, 163)";
+        Data.sort((a,b)=> b.priceKey-a.priceKey);
+        createDOM(Data);
     });
+    L2H.addEventListener("click",()=>{
+        for(let el of round_box){
+            el.style.backgroundColor = "#fff";
+        }
+        L2H.style.backgroundColor = "rgb(128, 96, 163)";
+        Data.sort((a,b)=> a.priceKey - b.priceKey);
+        createDOM(Data);
+    })
 }
 
+// Filtering Functionality
+function filter() {
+    let round_box = document.getElementsByClassName("round-box");
+
+    document.getElementById("red").addEventListener("click",()=>{
+        category("red");
+    });
+    document.getElementById("purple").addEventListener("click",()=>{
+        category("purple");
+    });
+    document.getElementById("white").addEventListener("click",()=>{
+        category("white");
+    });
+    document.getElementById("yellow").addEventListener("click",()=>{
+        category("yellow");
+    });
+    document.getElementById("mix").addEventListener("click",()=>{
+        category("mix");
+    });
+    document.getElementById("clear").addEventListener("click",()=>{
+        for(let el of round_box){
+            el.style.backgroundColor = "#fff";
+        }
+        createDOM(Data);
+    });
+
+    function category(color) {
+        for(let el of round_box){
+            el.style.backgroundColor = "#fff";
+        }
+        document.getElementById(`${color}`).style.backgroundColor = "rgb(128, 96, 163)";
+
+        color= color.toLowerCase();
+        let newData = allData.filter(el=>{
+            if(el.color == color){
+                return true;
+            }
+            return false;
+        });
+
+        createDOM(newData);
+    }
+}
 
 
 // Create Dom Function using this
@@ -157,6 +209,7 @@ function createDOM(data) {
         card.addEventListener("click",()=>{
             localStorage.setItem("product",JSON.stringify(el));
         })
+        card.setAttribute("onclick", "location.href=`./descpage.html`");
 
         card.append(img,name,price);
         cont.append(card);
@@ -168,10 +221,18 @@ function createDOM(data) {
 function pagination() {
     let btns = document.getElementsByClassName("paginationBtn");
     for(let i = 0; i < btns.length; i++){
+        
         btns[i].addEventListener("click",()=>{
+            btns[i].style.backgroundColor = "rgb(128, 96, 163)";
+
+            for(let el of btns){
+                if(el.innerText == btns[i].innerText){
+                    continue;
+                }
+                el.style.backgroundColor = "rgb(184, 162, 207)";
+            }
+
             searchResult(btns[i].innerText);
         });
-    }
-    
+    }   
 }
-
