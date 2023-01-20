@@ -157,42 +157,11 @@
     </div>
   </div>
 
-  <!-- Main Body -->
-  <div class="discount">
-    SAVE UP TO 40% ON TOP FLOWERS & GIFTS!
-  </div>
+  
   <div id="container">
     <!-- Append Data here -->
   </div>
-  <!-- <div id="cont">
-        <div><img src="https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/159139srdv4n5ch31x.jpg?width=545&height=597&quality=80&auto=webp&optimize={medium}" alt=""></div>
-<<<<<<< HEAD
-        <div> -->
-  <!-- <h3>
-            <!-- Partner OfferBuy this product and get upto $250 on the Pretty Petalsoff on Know More
-
-Partner OfferPurchase now & get a surprise cashback coupon for January / February 2023Know More
-
-Special PriceGet extra 10% off (price inclusive of cashback/coupon)T&C
-
-Bank Offer10% off on Citi Credit Card and EMI Transactions, up to ₹1,500. On orders of ₹5,000 and aboveT&C
-        </h3>
-=======
-        <div>
->>>>>>> main
-    
-    <h3 id="description">Highlights : </h3>
-       <ul><li><h4> Plant Name: Adenium Plant</h4></li></ul>
-       <ul><li> <h4>Type: Flower</h4></li></ul>
-       <ul><li> <h4>Suitable Location: Indoor</h4></li></ul>
-       <ul><li> <h4>Container Type: Plastic Bag</h4></li></ul>
-       <ul><li><h4> Height: 180 mm</h4></li></ul>
-
-       <div><h3 id="description" >Description : </h3>
-        <ul><li><h3>Adenium is a genus of flowering plants in the family Apocynaceae first described as a genus in 1819. It is native to Africa and the Arabian Peninsula</h3></li></ul></div>
-        <h3 id="description" >Review : <span style="color:rgb(103, 47, 103)" > Steven R : I placed this order for same-day delivery for my wife's birthday she received this around noon and she lived then they lasted longer then a week plus there was a promo code </span> </h3>
-        <button>Buy Now</button>
-    </div> -->
+  
 
   </div>
 
@@ -369,67 +338,4 @@ Bank Offer10% off on Citi Credit Card and EMI Transactions, up to ₹1,500. On o
  
 </body>
 </html>
-<script>
-  // navigation bar
-const CheckingIfLogIn = document.getElementById("nav-third-div");
-// Checking if signedIn
-signedIn()
-function signedIn() {
-    let signedIn = localStorage.getItem("signedIn");
-
-    if(signedIn == "true"){
-        CheckingIfLogIn.innerHTML = null;
-        let div1 =document.createElement("div");
-        let div2 = document.createElement("div");
-        let div3 = document.createElement("div");
-        let div4 = document.createElement("div");
-        let img1 = document.createElement("img");
-        let img2 = document.createElement("img");
-        let img3 = document.createElement("img");
-        let img4 = document.createElement("img");
-
-        img1.src = "./Photos/bell.png";
-        img2.src = "./Photos/user.png";
-        img3.src = "./Photos/shopping-cart.png";
-        img4.src = "./Photos/wishlist.png";
-
-        div1.append(img1);
-        div2.append(img2);
-        div3.append(img3);
-        div4.append(img4);
-        CheckingIfLogIn.append(div1,div2,div3,div4);
-        
-    } else {
-        CheckingIfLogIn.innerHTML = null;
-        let btn1 = document.createElement("button");
-        btn1.setAttribute("id", "loginBtn");
-        btn1.setAttribute("onclick", "location.href=`./loginPage.html`");
-
-        let btn2 = document.createElement("button");
-        btn2.setAttribute("id", "registerBtn");
-        btn2.setAttribute("onclick", "location.href=`./registerPage.html`");
-
-        btn1.innerText = "Login";
-        btn2.innerText = "Register";
-
-        CheckingIfLogIn.style.marginRight = "7%"
-
-        CheckingIfLogIn.append(btn1,btn2);
-    }
-}
-
-
-// Search input part
-Search();
-function Search() {
-    let search = document.getElementById("inp");
-    let btn = document.getElementById("searchBtn");
-
-    btn.addEventListener("click",()=>{
-        localStorage.setItem("search",JSON.stringify(search.value));
-        btn.onclick="location.href=`./searchPage.html`";
-    })
-}
-
-
-</script>
+<script src="./script/descpage.js"></script>
