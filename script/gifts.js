@@ -72,233 +72,233 @@ function Search() {
     let data =[
         {
             id:1,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/170865SU_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/170865SU_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:2000,
-            description:"True Love Gift Basket ",
+            name:"True Love Gift Basket ",
             category:"Cookies"
         },
         {
             id:2,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/175121U_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/175121U_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:7000,
-            description:"STrue Love Gift Basket ",
+            name:"STrue Love Gift Basket ",
             category:"Cookies"
         },
         {
             id:3,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/175116_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/175116_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:9000,
-            description:"My Valentine Bear & Sweets Basket" ,
+            name:"My Valentine Bear & Sweets Basket" ,
             category:"Gift Hamper"
         },
         {
             id:4,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/195057G_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/195057G_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:6000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
             category:"Cookies"
         },
         {
             id:5,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/41421SU_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/41421SU_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:7000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
             category:"Gift Hamper"
         },
         {
             id:6,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/41212_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/41212_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:5000,
-            description:"Valentine's Day Tower of Love.",
+            name:"Valentine's Day Tower of Love.",
             category:"Gift Hamper"
         },
         {
             id:7,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/174978sux.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/174978sux.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
             category:"valentine's sweet box"
         },
         {
             id:8,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/149540_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/149540_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
             category:"valentine's sweet box"
         },
 
         // tvs and projectors
         {
             id:9,
-            Image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163351SU21x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163351SU21x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:5000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"valentine's sweet box"
         },
         {
             id:10,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/172709_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/172709_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:9000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"valentine's sweet box"
         },
         {
             id:11,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/17523021x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/17523021x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:2000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"valentine's sweet box"
         },
         {
             id:12,
-            Image:"https://cdn3.1800baskets.com/wcsstore/Baskets/images/catalog/94551B_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn3.1800baskets.com/wcsstore/Baskets/images/catalog/94551B_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:6000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"sweets box"
         },
         {
             id:13,
-            Image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/178033_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/178033_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:9000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"sweets box"
         },
         {
             id:14,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/17259421x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/17259421x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:5000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"sweets box"
         },
         {
             id:15,
-            Image:"https://cdn3.1800baskets.com/wcsstore/Baskets/images/catalog/106001L_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn3.1800baskets.com/wcsstore/Baskets/images/catalog/106001L_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"sweets box"
         },
 
         // tablets and Ereaders
         {
             id:16,
-            Image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/179897_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/179897_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:3000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Gift Hamper"
         },
         {
             id:17,
-            Image:"https://cdn3.1800baskets.com/wcsstore/Baskets/images/catalog/94453_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn3.1800baskets.com/wcsstore/Baskets/images/catalog/94453_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:8000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Cookies"
         },
         {
             id:18,
-            Image:"https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/182053plx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/182053plx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:5000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Cookies"
         },
         {
             id:19,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/17284121x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/17284121x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+            name:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
              category:"Nuts Dry Fruits"
         },
         {
             id:20,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/175391_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/175391_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:3000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Nuts Dry Fruits"
         },
         {
             id:21,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/106005x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/106005x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:8000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Nuts Dry Fruits"
         },
         {
             id:22,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/106005x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/106005x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:7000,
-            description:"Valentine's Day Tower of Love.",
+            name:"Valentine's Day Tower of Love.",
              category:"Nuts Dry Fruits"
         },
 
         // Wearable technology
         {
             id:23,
-            Image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/179909_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/179909_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:6000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Nuts Dry Fruits"
         },
         {
             id:24,
-            Image:"https://cdn3.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163519_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn3.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163519_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Nuts Dry Fruits"
         },
         {
             id:25,
-            Image:"https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/182054nplx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/182054nplx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:2000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Nuts Dry Fruits"
         },
         {
             id:26,
-            Image:"https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/mk017866x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/mk017866x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:3000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Cookies"
         },
         {
             id:27,
-            Image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/106002_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/106002_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:8000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Cookies"
         },
         {
             id:28,
-            Image:"https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/mk017863x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800flowers.com/wcsstore/Flowers/images/catalog/mk017863x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Cookies"
         },
         {
             id:29,
-            Image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/17259421x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.1800baskets.com/wcsstore/Baskets/images/catalog/17259421x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:3000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Gift Hamper"
         },
         {
             id:30,
-            Image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/178033_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/178033_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Gift Hamper"
         },
         {
             id:31,
-            Image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/179909_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn2.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/179909_22x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:5000,
-            description:"Valentine's Day Tower of Love",
+            name:"Valentine's Day Tower of Love",
              category:"Gift Hamper"
         },
         {
             id:32,
-            Image:"https://cdn3.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163519_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
+            image:"https://cdn3.simplychocolate.com/wcsstore/SimplyChocolate/images/catalog/163519_23x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            description:"Valentine's Day Tower of Love",
-             category:"Gift Hamper"
+            name:"Valentine's Day Tower of Love",
+            category:"Gift Hamper"
         },
 
     ]
@@ -309,24 +309,20 @@ function appendData(data){
         let card=document.createElement("div")
         card.style.backgroundColor="white"
         let img=document.createElement("img")
-        img.src=el.Image
+        img.src=el.image
         img.id="image"
         let price =document.createElement("h3")
         price.textContent=el.price
         let description=document.createElement("p")
-        description.textContent=el.description
+        description.textContent=el.name
         description.id="desc"
         let category=document.createElement("h4")
         category.textContent=el.category
-//         let btn=document.createElement("button")
-//         btn.textContent="Add To Cart"
-//         btn.id="btn"
-//         btn.style.backgroundColor="purple"
-//         btn.style.color="white"
-//         // btn.style.marginLeft="20%"
-//         btn.addEventListener("click",()=>{
-// AddToCart(el)
-// })
+        card.setAttribute("onClick","location.href=`./descpage.html`");
+        
+        card.addEventListener("click",()=>{
+            localStorage.setItem("product",JSON.stringify(el));
+        });
 
         card.append(img,description,price,category)
         cont.append(card);

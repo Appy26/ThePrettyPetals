@@ -309,15 +309,11 @@ function appendData(data){
         name.id="desc"
         let category=document.createElement("h4")
        category.textContent=el.category
-//         let btn=document.createElement("button")
-//         btn.textContent="Add To Cart"
-//         btn.id="btn"
-//         btn.style.backgroundColor="purple"
-//         btn.style.color="white"
-//         // btn.style.marginLeft="20%"
-//         btn.addEventListener("click",()=>{
-// AddToCart(el)
-// })
+        card.setAttribute("onClick","location.href=`./descpage.html`");
+        
+        card.addEventListener("click",()=>{
+            localStorage.setItem("product",JSON.stringify(el));
+        });
 
         card.append(img,name,price,category)
         cont.append(card);
