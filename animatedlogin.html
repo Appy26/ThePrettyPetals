@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login From</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="login.css" /> -->
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color:rgb(6, 1, 1);
+}
+.login_form_container{
+    position: relative;
+    width: 400px;
+    height: 470px;
+    max-width: 400px;
+    max-height: 470px;
+    background: rgb(130, 106, 223);
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.login_form_container::before{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+
+}
+.login_form_container::after{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.login_form{
+    position: absolute;
+    content: '';
+    background-color: black;
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #8b41c0;
+
+} 
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.input_group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+.input_text{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f9fafa;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #b35ddb;
+
+}
+::placeholder{
+    font-size: 15px;
+    color:  #b35ddb;
+    letter-spacing: 1px;
+
+}
+.fa{
+    font-size: 20px;
+
+}
+#login_button{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    transition: 1s;
+    margin-top: 70px;
+
+
+}
+#login_button a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border: 1px solid #cdebf2;
+    border-radius: 50px;
+    background-color: #a953ef;
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.fotter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.fotter a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.glowIcon {
+    text-shadow: 0 0 10px #00ccff;
+
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 990px;
+    height: 770.2px;
+}
+.child1-last{
+    width: 324px;
+    height: 66px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.child1-last p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.3333px;
+    line-height: 15px;
+    color: rgba(74, 74, 74, 0.9);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.child1-mid{
+    width: 219.81px;
+    height: 42px;
+    left: calc(50% - 219.81px/2 + 0.09px);
+    bottom: 292.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
+    color: rgba(74, 74, 74, 0.9);
+    align-self: center;
+    border:1px solid black;
+    background-color: white;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- <div id="main">
+      <div class="child1-mid">
+        <p class="text">Login for faster</p>
+        <p class="text">checkout and order tracking.</p>
+    </div>
+
+      <div class="child1-last">
+        <p>One Account, 12 Brands</p>
+        <div>
+            <img src="https://cdn1.harryanddavid.com/wcsstore/HarryAndDavid/images/Auth0/celebrations_family_of_brands.png" alt="2nd Image">
+        </div>
+    </div>
+
+    </div> -->
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Login</h2>
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+            placeholder="Enter your Password"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="button_group" id="login_button">
+          <a>Submit</a>
+        </div>
+        <div class="fotter">
+          <a>Forgot Password ?</a>
+          <a>SingUp</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
+<script>
+    $(".input_text").focus(function(){
+    $(this).prev('.fa').addclass('glowIcon')
+})
+$(".input_text").focusout(function(){
+    $(this).prev('.fa').removeclass('glowIcon')
+})
+</script>

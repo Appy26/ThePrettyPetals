@@ -210,7 +210,7 @@ padding:7px;
 
 #flowerCat1{
    display:grid;
-   grid-template-columns: repeat(6,1fr);
+   grid-template-columns: repeat(auto-fit,minmax(150px,max-content));
    gap:50px;
    text-align: center;
    margin-top: 2%;
@@ -252,9 +252,10 @@ padding:7px;
    margin-bottom: 50px;
 }
 #flowerCat3{
+  /* // width: 100%; */
    display:grid;
-   grid-template-columns: repeat(6,1fr);
-   gap:34px;
+   grid-template-columns: repeat(auto-fit,minmax(195px,max-content));
+   gap:25px;
    text-align: center;
    margin-bottom: 70px;
    background-color: rgb(215, 219, 241);
@@ -307,16 +308,19 @@ border:0px solid red
 
 }
 .swiper-slide img{
-/* width:100%; */
+width:100%;
 height:70%;
-
+border-radius: 20px;
 }
 .swiper-slide div{
 width:70%;
 margin:auto;
 border:0px solid blue;
 border-radius: 20px;
-box-shadow: rgba(5, 150, 194, 0.838) 0px 2px 8px 0px;
+box-shadow: rgba(100, 108, 111, 0.838) 0px 2px 8px 0px;
+/* background-color: #98a7ef; */
+text-align: center;
+margin-left:1%
 }
 .swiper-slide{
 display: flex;
@@ -346,8 +350,8 @@ transform: scale(1.2);
 }
 #flower{
    display:grid;
-   grid-template-columns: repeat(2,1fr);
-   gap:80px;
+   grid-template-columns: repeat(auto-fit,minmax(450px,max-content));
+   gap:40px;
    margin-left:15%;
    margin-top: 110px;
    text-align: center;
@@ -365,9 +369,9 @@ width:100%;
 border-radius: 15px;
 }
 
-#flowerCat2,#flowerCat5{
+#flowerCat2{
    display: grid;
-   grid-template-columns: repeat(6,1fr);
+   grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
    margin-bottom: 90px;
    text-align: center;
    width:100%;
@@ -385,7 +389,7 @@ border-radius: 15px;
 #flowerCat5 div{
    transition: all 0.5s;
    border-radius: 10px;
-   box-shadow: rgba(5, 150, 194, 0.838) 0px 2px 8px 0px;
+   box-shadow: rgba(100, 110, 113, 0.838) 0px 2px 8px 0px;
 }
 #flowerCat2 div:hover,#flowerCat5 div:hover{
    transform: scale(1.07);
@@ -397,8 +401,9 @@ border-radius: 15px;
    /* transform:scale(1.05); */
 }
 #flowerCat5{
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,max-content));
+   gap:25px;
    background-color: rgb(215, 219, 241);
    border-radius: 10px;
    padding: 20px;
@@ -408,7 +413,7 @@ border-radius: 15px;
    transform: scale(1.04);
 }
 #flowerCat5 div{
-   width: 20%;
+   /* width: 20%; */
    text-align: center;
    padding: 20px;
 }
@@ -432,32 +437,9 @@ border-radius: 15px;
    margin-left: 9%;
    background-color: #fff;
 }
-#footerOne{
-   margin-top: 3%;
-   border:0px solid black;
-   color:#301662;
-   box-shadow: rgba(153, 135, 230, 0.95) 0px 2px 8px 0px;
-}
-#bgGrey{
-   color:white;
-   border:1px solid #98a7ef;
-   background-color:#98a7ef;
-   box-shadow: rgba(65, 58, 96, 0.95) 0px 2px 8px 0px;
-}
-#icons{
-   margin-top: 2%;
-   display:grid;
-   grid-template-columns: repeat(5,1fr);
-   gap:30px;
-   width:35%;
-   /* color:white; */
-   margin-left: 10%;
-   width:80%;
-   border:0px solid #4d96e3;
-   padding:7px;
-}
+
 #icons img{
-    width:90%;
+    width:130%;
 }
 
 /* Footer */
@@ -479,7 +461,9 @@ border-radius: 15px;
 .footer>div:nth-child(1) p{
    color:white;
    margin-left:5%;
-   margin-top: 20px;
+   margin-top: 10px;
+   border:0px solid white;
+   width:90%
 }
 .footer>div:nth-child(2){
    padding:7px;
@@ -497,7 +481,7 @@ border-radius: 15px;
    color:white;
    margin-left: 10%;
    /* width:80%; */
-   border:1px solid #4d96e3;
+   border:0px solid #4d96e3;
    padding:7px;
    margin-top: 7%;
 }
@@ -515,7 +499,7 @@ border-radius: 15px;
 }
 #flowerCat4{
    display:grid;
-   grid-template-columns: repeat(4,1fr);
+   grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
    gap:30px;
    text-align: center;
    background-color: rgb(196, 163, 221);
@@ -606,3 +590,36 @@ padding:3px
    background-color:#98a7ef;
    box-shadow: rgba(65, 58, 96, 0.95) 0px 2px 8px 0px;
 }
+    @media all and (min-width:320px) and (max-width:780px){
+       
+        #nav{
+            display:flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+        #inp{
+         display:none
+        }
+        #searchBtn{
+         display:none
+        }
+        #nav-third-div{
+width: 65%;
+        }
+        .nav2{
+            display: none;
+            /* grid-template-columns: repeat(5,1fr); */
+        }
+        .nav2:hover{
+         display:block;
+         grid-template-columns: repeat(3,1fr);
+        }
+        .category>div:nth-child(1){
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+width:60%;
+margin:auto;
+/* margin-right:10%;  */
+        }
+      }
