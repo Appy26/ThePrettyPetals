@@ -29,7 +29,8 @@ body{
    margin:auto;
    padding: 5px;
    align-items: center;
-   padding-right: 20px;
+   height:70px;
+   border:0px solid red
 }
 #logo:hover{
    cursor: pointer;
@@ -143,7 +144,7 @@ body{
 .nav2{
     display:flex;
     justify-content: space-evenly;
-    background-color:#301662;
+    background-color:#5b4781;
     color:white;
     padding:5px
 }
@@ -182,12 +183,13 @@ body{
 }
 #cont{
      /* display:flex; */
-    margin-left:20%; 
+    margin: auto;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:10px;
     border:0px solid red;
-    width:50%;
+    width:70%;
+    
 }
 #cont>div:nth-child(1) img{
     width:100%;
@@ -282,53 +284,65 @@ body{
  h1{
     margin-left:45%
  }
- .footer{
-    margin-top: 5%;
-    /* border:1px solid blue; */
-    display:flex;
-    justify-content: space-between;
-    background-color:#301662;
-    padding:5%;
-    color:white;
+ #icons{
+   margin-top: 2%;
+   display:grid;
+   grid-template-columns: repeat(5,1fr);
+   gap:30px;
+   /* width:45%; */
+   /* color:white; */
+   margin-left: 10%;
+   width:80%;
+   border:0px solid #4d96e3;
+   padding:7px;
+}
+#icons img{
+    width:130%;
 }
 
+/* Footer */
+.footer{
+   display:flex;
+   justify-content: space-between;
+   background-color:#412b6b;
+   padding: 2% 5%;
+   color:white;
+   margin-top: 1%;
+}
 .footer h2{
    width:100%;
-   margin-right: 10%;
-   /* border:1px solid yellow; */
-   /* background-color: #4d96e3; */
+   margin-left: 5%;
+   font-family: sans-serif;
+   margin: 20px 0px;
+   font-weight: 400;
    padding:7px;
-   /* box-shadow: rgba(142, 177, 13, 0.852) 0px 8px 24px; */
 }
 .footer>div:nth-child(1) p{
-    color:white;
-    /* width:250%; */
-    margin-left:5%;
-   /* border:1px solid white */
+   color:white;
+   margin-left:5%;
+   margin-top: 10px;
+   border:0px solid white;
+   width:90%
 }
 .footer>div:nth-child(2){
-    padding:7px;
-    /* background-color: white; */
-    /* border:1px solid green; */
-    width:95%;
+   padding:7px;
+   width:95%;
    height:50px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    text-align: center;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   text-align: center;
 }
 #icons{
    margin-top: 2%;
    display:grid;
    grid-template-columns: repeat(5,1fr);
    gap:30px;
-   width:35%;
+   width:60%;
    color:white;
    margin-left: 10%;
-   width:80%;
-   border:1px solid #4d96e3;
+   /* width:80%; */
+   border:0px solid #4d96e3;
    padding:7px;
-}
-#icons img{
-    width:90%;
+   margin-top: 7%;
 }
 #pTag{
    display:grid;

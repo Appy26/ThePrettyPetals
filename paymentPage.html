@@ -13,39 +13,18 @@
     <!-- navbar -->
 
     <div id="nav">
-        <img src="./Photos/logo1.png" alt="">
-        <input id="inp" type="search" placeholder="enter a flower name" >
-        <button>Search</button>
-        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-        <lord-icon
-            src="https://cdn.lordicon.com/msetysan.json"
-            trigger="hover"
-            colors="primary:#ffffff"
-            style="width:40px;height:40px;margin-top:1%;">
-            </lord-icon>
-           <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-        <lord-icon
-            src="https://cdn.lordicon.com/bhfjfgqz.json"
-            trigger="hover"
-            colors="primary:#ffffff"
-            style="width:40px;height:40px;margin-top:1%">
-        </lord-icon>
-        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-        <lord-icon
-            src="https://cdn.lordicon.com/hyhnpiza.json"
-            trigger="hover"
-            colors="primary:#ffffff"
-            style="width:40px;height:40px;margin-top:1%;">
-        </lord-icon>
-        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-        <lord-icon
-            src="https://cdn.lordicon.com/xryjrepg.json"
-            trigger="hover"
-            colors="primary:#ffffff"
-            style="width:40px;height:40px;margin-top:1%">
-        </lord-icon>
-        </div> 
-
+        <img src="./Photos/logo1.png" alt="" onclick="location.href=`./index.html`" id="logo">
+  
+        <input id="inp" type="search" placeholder="Enter Keyword or Flower name or Color" >
+  
+        <div id="searchBtn">Search</div>
+  
+        <div id="nav-third-div">
+           <!-- Login Authentication check here -->
+        </div>
+        
+     </div> 
+  
         <!-- below navigationbar -->
         <div class="nav2">
             <div id="main">
@@ -260,22 +239,22 @@
 <!-- footerpart -->
 <div class="footer">
     <div id="pTag">
-        <div><h2>MORE WAYS TO STOP</h2>
-            <p>FLOWER DELIVERY SAME-DAY</p>
-            <p>FLOWER ARRANGEMENTS</p>
-            <p>SYMPATHY FLOWERS & GIFTS</p>
-            <p>ROSES & PLANTS</p>
-            <p>BIRTHDAY FLOWERS</p>
-            <p>FLOWER SUBSCRIPTION</p>
-            <p>PLANTS & BUDS</p>
-            <p>GIFTS BASKETS AND FOOD</p>
-            <p>VALENTINES'S DAY FLOWERS</p>
-            <p>INTERNATIONAL FLOWER DELIVERY </p>
-            <p>FIND A LOCAL FLORIST</p>
-            <p>CORPORATE GIFTS</p>
-            <p>CHOCOLATE COVERED STRAWBERRIES</p>
-            <p>MARKETPLACE SELLERS</p>
-            <p>SITEMAP</p>
+       <div><h2>MORE WAYS TO STOP</h2>
+          <p>FLOWER DELIVERY SAME-DAY</p>
+          <p>FLOWER ARRANGEMENTS</p>
+          <p>SYMPATHY FLOWERS & GIFTS</p>
+          <p>ROSES & PLANTS</p>
+          <p>BIRTHDAY FLOWERS</p>
+          <p>FLOWER SUBSCRIPTION</p>
+          <p>PLANTS & BUDS</p>
+          <p>GIFTS BASKETS AND FOOD</p>
+          <p>VALENTINES'S DAY FLOWERS</p>
+          <p>INTERNATIONAL FLOWER DELIVERY </p>
+            <!-- <p>Find a Local Florist</p>
+            <p>Corporate Gifts</p>
+            <p>Chocolate Covered Strawberries</p>
+            <p>Marketplace Sellers </p>
+            <p>Sitemap</p> -->
         </div>
         <div>
           <h2>OUR STORIES</h2>
@@ -325,19 +304,83 @@
     <!-- ICONS -->
    
     <div id="icons"><img src=".\Photos\facebook.png" alt=".\facebook.png">
-        <!-- twitter -->
-        <img src=".\Photos\twitter.png" alt="">
-        <!-- instagram -->
-        <img src=".\Photos\instagram.png" alt="">
-     
-        <!-- pinterest -->
-        <img src=".\Photos\pinterest (1).png" alt="">
-        <!-- youtube -->
-      <img src=".\Photos\youtube.png" alt="">
+       <!-- twitter -->
+       <img src=".\Photos\twitter.png" alt="">
+       <!-- instagram -->
+       <img src=".\Photos\instagram.png" alt="">
+    
+       <!-- pinterest -->
+       <img src=".\Photos\pinterest (1).png" alt="">
+       <!-- youtube -->
+     <img src=".\Photos\youtube.png" alt="">
  </div>
-    </div>
+ </div>
  </div>
  
     
 </body>
 </html>
+<script>
+    // navigation bar
+const CheckingIfLogIn = document.getElementById("nav-third-div");
+// Checking if signedIn
+signedIn()
+function signedIn() {
+    let signedIn = localStorage.getItem("signedIn");
+
+    if(signedIn == "true"){
+        CheckingIfLogIn.innerHTML = null;
+        let div1 =document.createElement("div");
+        let div2 = document.createElement("div");
+        let div3 = document.createElement("div");
+        let div4 = document.createElement("div");
+        let img1 = document.createElement("img");
+        let img2 = document.createElement("img");
+        let img3 = document.createElement("img");
+        let img4 = document.createElement("img");
+
+        img1.src = "./Photos/bell.png";
+        img2.src = "./Photos/user.png";
+        img3.src = "./Photos/shopping-cart.png";
+        img4.src = "./Photos/wishlist.png";
+
+        div1.append(img1);
+        div2.append(img2);
+        div3.append(img3);
+        div4.append(img4);
+        CheckingIfLogIn.append(div1,div2,div3,div4);
+        
+    } else {
+        CheckingIfLogIn.innerHTML = null;
+        let btn1 = document.createElement("button");
+        btn1.setAttribute("id", "loginBtn");
+        btn1.setAttribute("onclick", "location.href=`./loginPage.html`");
+
+        let btn2 = document.createElement("button");
+        btn2.setAttribute("id", "registerBtn");
+        btn2.setAttribute("onclick", "location.href=`./registerPage.html`");
+
+        btn1.innerText = "Login";
+        btn2.innerText = "Register";
+
+        CheckingIfLogIn.style.marginRight = "7%"
+
+        CheckingIfLogIn.append(btn1,btn2);
+    }
+}
+
+
+// Search input part
+Search();
+function Search() {
+    let search = document.getElementById("inp");
+    let btn = document.getElementById("searchBtn");
+
+    btn.addEventListener("click",()=>{
+        localStorage.setItem("search",JSON.stringify(search.value));
+        btn.onclick="location.href=`./searchPage.html`";
+    })
+}
+
+
+</script>

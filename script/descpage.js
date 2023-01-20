@@ -79,8 +79,15 @@ function createDOM() {
     <ul><li> <p><span>Type</span>: Flower</p></li></ul>
     <ul><li> <p><span>Suitable Location</span>: Indoor</p></li></ul>
     <ul><li><p><span>Height</span>: 180 mm</p></li></ul>
-    <div id="button"><button class="cart-wishlist" data-id="wishlist">Add to Wishlist</button><button data-id="wishlist" class="cart-wishlist">Add to Cart</button></div>`
+    <div id="button"><button id="wishlist">Add to Wishlist</button><button id="cart">Add to Cart</button></div>`
 
     div1.append(img);
     cont.append(div1,div2);
 }
+// document.getElementById("wishlist").addEventListener("click",async()=>{
+//     try {
+//         let req = await fetch(`${url}`)
+//     } catch () {
+        
+//     }
+// });
