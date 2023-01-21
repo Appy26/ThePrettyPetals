@@ -83,7 +83,9 @@ form.addEventListener("submit",(e)=>{
         firstName: form.name.value,
         lastName: form.name2.value,
         email:form.email.value,
-        pass:form.pass.value
+        pass:form.pass.value,
+        cart:[],
+        wishlist:[]
     }
 
     // Form Validation Here

@@ -62,6 +62,7 @@ function Search() {
 
 let productData = JSON.parse(localStorage.getItem("product"));
 const cont = document.getElementById("container");
+const url = `https://jsson-testing.onrender.com/`;
 
 createDOM();
 function createDOM() {
@@ -84,10 +85,79 @@ function createDOM() {
     div1.append(img);
     cont.append(div1,div2);
 }
-// document.getElementById("wishlist").addEventListener("click",async()=>{
-//     try {
-//         let req = await fetch(`${url}`)
-//     } catch () {
+document.getElementById("wishlist").addEventListener("click", async()=>{
+    
+    let product = JSON.parse(localStorage.getItem("product"));
+    let user = JSON.parse(localStorage.getItem("user"));
+
+    try {
+        // Getting the data
+        let req = await fetch(`${url}register/${user.id}/`);
+        let res = await req.json();
         
-//     }
-// });
+        let exist = false;
+        for(let el of res.cart){
+            if(product.id == el.id){
+                exist = true;
+            }
+        }
+        if(!exist){
+            res.cart.push(product);
+            alert("Product Added to Wishlist");
+        }else {
+            alert("Product has already been added to Wishlist");
+            return;
+        }
+
+        // Updating the data
+        await fetch(`${url}register/${user.id}`,{
+            method:`PATCH`,
+            headers:{
+                "content-type":"application/json"
+            },
+            body: JSON.stringify(res)
+        });
+
+
+    } catch (err) {
+        console.error(err);
+    }
+});
+
+document.getElementById("cart").addEventListener("click", async()=>{
+    let product = JSON.parse(localStorage.getItem("product"));
+    let user = JSON.parse(localStorage.getItem("user"));
+
+    try {
+        // Getting the data
+        let req = await fetch(`${url}register/${user.id}/`);
+        let res = await req.json();
+
+        let exist = false;
+        for(let el of res.cart){
+            if(product.id == el.id){
+                exist = true;
+            }
+        }
+        if(!exist){
+            res.cart.push(product);
+            alert("Product Added to Cart");
+        }else {
+            alert("Product has already been added to Cart");
+            return;
+        }
+        
+        // Updating the data
+        await fetch(`${url}register/${user.id}`,{
+            method:`PATCH`,
+            headers:{
+                "content-type":"application/json"
+            },
+            body: JSON.stringify(res)
+        });
+
+
+    } catch (err) {
+        console.error(err);
+    }
+});
