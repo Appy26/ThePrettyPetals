@@ -1,2 +1,3 @@
-POST https://jsson-testing.onrender.com/register
-body: {"firstName": "kl","lastName": "gjh","email":"fgjgh","pass":"fgh"}
+PATCH https://jsson-testing.onrender.com/register/1
+# {"content-type":"application/json"}
+{"firstName": "kl","lastName": "gjh","email":"fgjgh","pass":"fgh","cart":[{"check":"ewfwefj"}],"wishlist":[{"check":"sddfoij"}]}
