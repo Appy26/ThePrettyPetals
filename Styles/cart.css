@@ -221,6 +221,7 @@ body{
          cursor: pointer;
       }
       #logos{
+         
          display: flex;
          width: 20%;
          justify-content: space-between;
@@ -385,6 +386,7 @@ body{
 
 /* Footer */
 .footer{
+   margin-top:2%;
   display:flex;
   justify-content: space-between;
   background-color:#412b6b;

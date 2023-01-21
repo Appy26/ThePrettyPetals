@@ -204,7 +204,7 @@ function Search() {
             id:19,
             image:"https://cdn1.1800baskets.com/wcsstore/Baskets/images/catalog/17284121x.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}",
             price:4000,
-            name:"Save up to $350 on select Samsung Galaxy Tab S8 tablets.",
+            name:"Valentine's Day Tower of Love",
              category:"Nuts Dry Fruits"
         },
         {

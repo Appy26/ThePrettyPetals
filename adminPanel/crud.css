@@ -1,0 +1,91 @@
+#form > form > input {
+    margin: auto;
+    width: 90%;
+    border-radius: 5px;
+    border: 0ch;
+    padding-left: 15px;
+    margin-top: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+
+  form > input:last-child {
+    background-color: #2f248b;
+    height: 60px;
+    width: 40%;
+    color: white;
+    font-weight: 600;
+    margin: auto;
+  }
+
+  form > input:last-child:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #2f248b;
+    color: rgb(255, 255, 255);
+  }
+
+/* ---------------scroll -----------------*/
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #2f248b
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #2f248b
+}
+
+
+
+/* ---------------scroll -----------------*/
+
+  .sales-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 0 2%;
+    height: 780px;
+    overflow-y:scroll;
+  }
+
+  .sales-details > div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15%;
+  padding: 0 0 10px 0;
+  }
+  .sales-details > div>img{
+    width: 20%;
+    height: 40%;
+  }
+  .sales-details > div:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .sales-details > div > img {
+    width: 80%;
+  }
+
+  .sales-details > div > img:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 20px;
+  }
+
+  .sales-details > div > p,
+  .sales-details > div > h4 {
+    text-align: left;
+    padding-left: 6%;
+  }
