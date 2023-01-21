@@ -96,13 +96,13 @@ document.getElementById("wishlist").addEventListener("click", async()=>{
         let res = await req.json();
         
         let exist = false;
-        for(let el of res.cart){
+        for(let el of res.wishlist){
             if(product.id == el.id){
                 exist = true;
             }
         }
         if(!exist){
-            res.cart.push(product);
+            res.wishlist.push(product);
             alert("Product Added to Wishlist");
         }else {
             alert("Product has already been added to Wishlist");

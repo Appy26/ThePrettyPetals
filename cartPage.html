@@ -17,7 +17,7 @@
 
     <input id="inp" type="search" placeholder="Enter Keyword or Flower name or Color">
 
-    <div id="searchBtn">Search</div>
+    <div id="searchBtn" onclick="location.href=`./searchPage.html`">Search</div>
 
     <div id="nav-third-div">
       <!-- Login Authentication check here -->
@@ -180,14 +180,14 @@
     </div>
     <div id="second-cont">
       <div>
-        <h3>orders summary</h3>
-        <p>Total items :- <span id="total-items"></span></p>
-        <p>Total Price :- <span id="total-price"></span></p>
-        <p>GST 18% :- <span id="tax"></span></p>
+        <h3>Orders Summary</h3>
+        <p><span class="summary">Total items</span> :-  &nbsp; &nbsp;<span id="total-items">0</span></p>
+        <p><span class="summary">Total Price</span> :- &nbsp; &nbsp;$<span id="total-price">0</span></p>
+        <p><span class="summary">GST 18%</span> :-  &nbsp; &nbsp;$<span id="tax">0</span></p>
         <hr>
-        <p>Grand Total :- <span id="grand-total"></span></p>
+        <p><span class="summary">Grand Total</span> :- &nbsp; &nbsp;$<span id="grand-total">0</span></p>
       </div>
-      <div id="checkout">PROCEED TO CHECKOUT</div>
+      <div id="checkout" onclick="location.href=`./paymentPage.html`">PROCEED TO CHECKOUT</div>
     </div>
   </div>
 
@@ -205,11 +205,6 @@
         <p>GIFTS BASKETS AND FOOD</p>
         <p>VALENTINES'S DAY FLOWERS</p>
         <p>INTERNATIONAL FLOWER DELIVERY </p>
-        <!-- <p>Find a Local Florist</p>
-              <p>Corporate Gifts</p>
-              <p>Chocolate Covered Strawberries</p>
-              <p>Marketplace Sellers </p>
-              <p>Sitemap</p> -->
       </div>
       <div>
         <h2>OUR STORIES</h2>

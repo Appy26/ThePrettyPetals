@@ -54,7 +54,7 @@ function Search() {
 
     btn.addEventListener("click",()=>{
         localStorage.setItem("search",JSON.stringify(search.value));
-        btn.setAttribute("onclick","location.href=`./searchPage.html`")
+        btn.setAttribute("onclick","")
     })
 }
 
@@ -63,12 +63,20 @@ var user = JSON.parse(localStorage.getItem("user"));
 const url = `https://jsson-testing.onrender.com/`;
 var container = document.getElementById("card-items");
 var Data;
+var fullData;
+let total_items = document.getElementById("total-items");
+let total_price = document.getElementById("total-price");
+let tax = document.getElementById("tax");
+let grand_total = document.getElementById("grand-total");
 
+// Function calling
 fetchData();
+
 
 async function fetchData() {
     let req = await fetch(`${url}register/${user.id}/`);
     let res = await req.json();
+    fullData = res;
     Data = res.cart;
     createDOM(Data);
 }
@@ -79,12 +87,15 @@ function createDOM(data) {
     if(!data){
         let h3 = document.createElement("h3");
         h3.innerText = "No Items to show here";
+        h3.style.textAlign = "center";
         container.append(h3);
         return;
     }
     container.innerHTML = null;
+    let items = 0;
+    let Price = 0;
 
-    data.forEach(el => {
+    data.forEach((el,i) => {
         let card = document.createElement("div");
         card.setAttribute("class","card");
         let img = document.createElement("img");
@@ -96,18 +107,78 @@ function createDOM(data) {
         let inc = document.createElement("button");
         let span = document.createElement("span");
         let dec = document.createElement("button");
+        let remove = document.createElement("div");
+        let p = document.createElement("p");
+        remove.setAttribute("class","remove");
+
+        let cnt = 1;
+        items++;
+        Price += el.priceKey;
+
+        // Event Listeners
+        inc.addEventListener("click",()=>{
+            cnt++;
+            items++;
+            Price += el.priceKey;
+            Price = +Price.toFixed(2);
+            tax.innerText = +(((el.priceKey*items)*18)/100).toFixed(2);
+            total_price.innerText = Price;
+            total_items.innerText = items;
+            grand_total.innerText = ((+total_price.innerText) + (+tax.innerText)).toFixed(2);
+            span.innerText = cnt;
+        });
+
+        dec.addEventListener("click",()=>{
+            if(cnt == 1){
+                return;
+            }
+            cnt--;
+            items--;
+            Price -= el.priceKey;
+            Price = +Price.toFixed(2);
+            tax.innerText = +(((el.priceKey*items)*18)/100).toFixed(2);
+            total_price.innerText = Price;
+            total_items.innerText = items;
+            grand_total.innerText = ((+total_price.innerText) + (+tax.innerText)).toFixed(2);
+            span.innerText = cnt;   
+        });
+        remove.addEventListener("click",async()=>{
+            data.splice(i,1);
+            fullData.cart = data;
+            await fetch(`${url}register/${user.id}`,{
+                method:`PATCH`,
+                headers:{
+                    "content-type":"application/json"
+                },
+                body: JSON.stringify(fullData)
+            });
+            createDOM(data);
+        });
 
         img.src = el.image;
         name.innerText = el.name.substr(0,40);
         price.innerText = `Price:- ${el.price}`;
         inc.innerText = "+";
         dec.innerText = "-";
-        span.innerText = " 1 ";
-
+        span.innerText = `${cnt} `;
+        p.innerText = "Remove Product";
+        Price = +Price.toFixed(2);
+        total_items.innerText = items;
+        total_price.innerText = Price;
+        tax.innerText = +(((el.priceKey*items)*18)/100).toFixed(2);
+        grand_total.innerText = ((+total_price.innerText) + (+tax.innerText)).toFixed(2);
+    
+        remove.append(p);
         imgDiv.append(img);
         quanDiv.append(inc,span,dec);
-        nameDiv.append(name,price,quanDiv);
+        nameDiv.append(name,price,quanDiv,remove);
         card.append(imgDiv,nameDiv);
         container.append(card);
     });
+    if(data.length == 0){
+        let h3 = document.createElement("h3");
+        h3.innerText = "No Items to show here";
+        h3.style.textAlign = "center";
+        container.append(h3);
+    }
 }
