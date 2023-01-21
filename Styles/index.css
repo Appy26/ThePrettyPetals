@@ -358,7 +358,7 @@ width:70%;
 margin:auto;
 border:0px solid blue;
 border-radius: 20px;
-box-shadow: rgba(100, 108, 111, 0.838) 0px 2px 8px 0px;
+box-shadow: rgba(122, 98, 220, 0.838) 0px 2px 8px 0px;
 /* background-color: #98a7ef; */
 text-align: center;
 margin-left:1%
@@ -370,11 +370,11 @@ margin-left:1%
 }
 
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
-   color: #fff;
+   color: rgb(222, 19, 232);
 }
 
 .swiper .swiper-pagination-bullet-active {
-   background: #fff;
+   background: rgb(49, 132, 201);
 }
 
 img {

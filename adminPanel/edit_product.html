@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit Product</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="icon" type="image/x-icon" href="image/WhatsApp Image 2022-12-16 at 13.38.58.jpeg">
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Product</title>
+  <link rel="stylesheet" href="crud.css">
+
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <!-- logo -->
+      <img style="width:100%"src="The pretty petals (2).png" alt="">
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="admin.html" class="active">
+          <i class="bx bx-grid-alt"></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="add_product.html">
+          <i class="bx bx-folder-plus"></i>
+          <span class="links_name">Add Product</span>
+        </a>
+      </li>
+      <li style="background-color: #081d45">
+        <a href="edit_product.html">
+          <i class="bx bx-edit-alt"></i>
+          <span class="links_name">Edit Product</span>
+        </a>
+      </li>
+      <li>
+        <a href="delete_product.html">
+          <i class="bx bx-message-square-minus"></i>
+          <span class="links_name">Delete Product</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-message"></i>
+          <span class="links_name">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="links_name">Setting</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="/index.html">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class="bx bx-menu sidebarBtn"></i>
+        <span class="dashboard">Edit Product</span>
+      </div>
+      <!-- <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div> -->
+     <div class="profile-details">
+      <img id="img_nav" src="WhatsApp Image 2022-07-24 at 8.52.17 PM (1).jpeg" alt="appy">
+                <!-- admin name -->
+                <span class="admin_name">Hey <span id="admin_name"></span></span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+    </nav>
+
+    <div class="home-content">
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Edited Item</div>
+          <div class="sales-details">
+            <!-- Fetch Edit Item-->
+          </div>
+        </div>
+        <div class="top-sales box" style="height: 700px">
+          <div class="title">Edit Selected Item</div>
+          <div id="form">
+            <form>
+              <input type="text" id="addId" placeholder="Id" required />
+              <input  type="mail" id="addCategory" placeholder="Category" required />
+              <input type="text" id="addTitle" placeholder="Enter Title" required />
+              <input type="text" id="addDescription" placeholder="Enter Description" required />
+              <input type="number" id="addPrice" placeholder="Enter price" required />
+
+             
+
+             
+              <p style="color: black; margin-top: 35px">
+                Note: Product details will get updated in the site, make sure
+                before updating details.
+              </p>
+              <input style="font-size: 18px; width: 94%" type="button" id="addBtn" value="Edit Product" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+
+
+
+
+
+ let data = JSON.parse(localStorage.getItem("admin_data"));
+       
+            document.querySelector("#admin_name").innerText = localStorage.getItem("admin_name")
+            document.querySelector("#img_nav").setAttribute("src", data.usertype);
+
+
+
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function () {
+      sidebar.classList.toggle("active");
+      if (sidebar.classList.contains("active")) {
+        sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    };
+
+    let globalData;
+    let admin_details = document.querySelector(".sales-details");
+    async function Fetch_admin() {
+      try {
+        let api_data = await fetch(
+          "https://63996f3916b0fdad773c979e.mockapi.io/products",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        let data = await api_data.json();
+        globalData = data;
+        displayCards(data);
+      } catch (error) {
+        alert("Can't able to fetch Details of Admin");
+      }
+    }
+    Fetch_admin();
+
+    function displayCards(data) {
+      let admin_details = document.querySelector(".sales-details");
+      admin_details.innerHTML = "";
+      data.forEach((element) => {
+        let div = document.createElement("div");
+        div.addEventListener("click", function () {
+          localStorage.setItem("product_details", JSON.stringify(element));
+        });
+
+        let img = document.createElement("img");
+        img.setAttribute("src", element.avatar);
+        let id = document.createElement("h4");
+        id.innerText = "Id: " + element.id;
+        let offer = document.createElement("h4");
+        let tit = "Title: " + element.title;
+        offer.innerText = `${tit.substring(0, 15)}...`;
+        let discription = document.createElement("p");
+        let str = element.discription;
+        discription.innerText = `${str.substring(0, 25)}...`;
+        let price = document.createElement("h4");
+        price.innerHTML = `<h4>&#8377; ${element.price}</h4>`;
+
+        div.append(img, id, offer, discription, price);
+        document.querySelector(".sales-details").append(div);
+      });
+    }
+
+    let updatedButton = document.getElementById("addBtn");
+
+    updatedButton.addEventListener("click", editProduct);
+    let c = localStorage.getItem("editcount") || 0;
+    async function editProduct() {
+      let productId = document.getElementById("addId").value;
+      let categoryData = document.getElementById("addCategory").value;
+      let title = document.getElementById("addTitle").value;
+      let description = document.getElementById("addDescription").value;
+      let price = document.getElementById("addPrice").value;
+      let brand = document.getElementById("addBrand").value;
+      let image = document.getElementById("addImage").value;
+
+
+
+      try {
+        let api_data = await fetch(
+          `https://63996f3916b0fdad773c979e.mockapi.io/products/${productId}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              title: title,
+              avatar: image,
+              category: categoryData,
+              brand: brand,
+              price: price,
+              discription: description,
+              id: productId
+
+            }),
+          }
+        );
+        console.log(api_data);
+        if (api_data.ok) {
+          let data = await api_data.json();
+          c++;
+          localStorage.setItem("editcount",c);
+          alert("Product Edited");
+          window.location.href = "edit_product.html"
+        } else {
+          console.log("not editing data");
+        }
+      } catch (error) {
+        alert(error);
+      }
+
+    }
+    editProduct();
+  </script>
+  //
+</body>
+//
+
+</html>

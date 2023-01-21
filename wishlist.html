@@ -5,160 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add to cart</title>
-    <style>
-      * {
-  box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
-    background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
-    background-size: 100% 100%;
-    height: 100vh;
-    background-attachment: fixed;
-    
-}
-        .container{
-            background-color:rgb(243, 244, 245);
-            width:85%;
-            height: 500px;
-            margin-top: 60px;
-            display: flex;
-            margin-left: 80px;
-             border-radius: 10px;
-            justify-content:space-evenly;
-            
-        }
-        h1{
-          margin-left: 20px;
-        }
-        .flip-card1 {
-  background-color: transparent;
-  width: 500px;
-  height: 250px;
-  perspective: 1000px;
-  float:left;
-  margin-left: -30px;
-  border-radius: 20px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10px;
-  background-color:white;
-}
-
-
-
-.flip-card-front {
-  
-  color: black;
-  margin-top: -20px;
-
-  
-}
-
-
-.flip-card1 img{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: start;
-    margin-left: 10px;
-  
-
-}
-.container button{
-    width: 500px;
-    height: 30px;
-    background-color: purple;
-    margin-top: -10px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: -100px;
-    align-items:flex-start;
-}
-.flip-card1 button{
-    margin-bottom: 10px;
-}
-
-
-
-      .siri{
-        border-radius: 10px;
-        height: 100px;
-        width:500px;
-        border:20px;
-        box-shadow: 0px 0px 5px 0px;
-        padding-left: 13px;
-        background-color: white;
-        
-      }
-      .siri button{
-        height:40px;
-        width:95%;
-        border: none;
-        font-size: 16px;
-        color: white;
-        
-      }
-      .flip-card-front h3{
-        text-align: left;
-        margin-left: 10px;
-      }
-      .flip-card-front hr{
-        width:500px;
-        margin-top: -15px;
-      }
-      
-      
-      
-      
-      .sri{
-        font-size: 200px;
-      }
-      
-      .baby img{
-        height: 20px;
-        width: 20px;
-      
-        text-align: end;
-      }
-      .amit{
-        display: flex;
-        
-        
-      }
-      .amit h4{
-        text-align: left;
-        margin-left: 20px;
-        font-size: 13px;
-        margin-top: -2px;
-      }
-      .amit p{
-        text-align: left;
-        margin-left: -105px;
-        font-size: 10px;
-        margin-top: 20px;
-
-      }
-      .siri1{
-        margin-top: 30px;
-        margin-left: -50px;
-        
-      }
-      
-      
-      
-
-    </style>
+    <link rel="stylesheet" href=".\Styles\wishlist.css">
 </head>
 <body>
+<!-- navbar -->
+<div id="nav">
+  <img src="./Photos/logo1.png" alt="" onclick="location.href=`./index.html`" id="logo">
+
+  <input id="inp" type="search" placeholder="Enter Keyword or Flower name or Color" >
+
+  <div id="searchBtn">Search</div>
+
+  <div id="nav-third-div">
+     <!-- Login Authentication check here -->
+  </div>
+  
+</div> 
+
     <div class="container" >
         <div>
           <div class="siri1">
@@ -204,6 +67,88 @@ body{
           </div>
         </div>
     </div>
+
+
+    <div class="footer">
+      <div id="pTag">
+         <div><h2>MORE WAYS TO STOP</h2>
+            <p>FLOWER DELIVERY SAME-DAY</p>
+            <p>FLOWER ARRANGEMENTS</p>
+            <p>SYMPATHY FLOWERS & GIFTS</p>
+            <p>ROSES & PLANTS</p>
+            <p>BIRTHDAY FLOWERS</p>
+            <p>FLOWER SUBSCRIPTION</p>
+            <p>PLANTS & BUDS</p>
+            <p>GIFTS BASKETS AND FOOD</p>
+            <p>VALENTINES'S DAY FLOWERS</p>
+            <p>INTERNATIONAL FLOWER DELIVERY </p>
+              <!-- <p>Find a Local Florist</p>
+              <p>Corporate Gifts</p>
+              <p>Chocolate Covered Strawberries</p>
+              <p>Marketplace Sellers </p>
+              <p>Sitemap</p> -->
+          </div>
+          <div>
+            <h2>OUR STORIES</h2>
+            <p>STORE LOCATOR</p>
+            <p>FRANCHISE OPPORTUNITIES</p>
+            <p>LOCAL DIY EVENTS</p>
+            <p>ACCOUNT LOGIN</p>
+            <p>SIGNIN TO YOUR ACCOUNT</p>
+            <p>VALENTINES'S DAY FLOWERS</p>
+            <p>INTERNATIONAL FLOWER </p>
+            <p>FIND A LOCAL FLORIST</p>
+            <p>SAME-DAY DELIVERY</p>
+          </div>
+          <div>
+              <h2>CORPORATE</h2>
+              <p>ABOUT US</p>
+              <p>ADVERTISE WITH US</p>
+              <p>DEVELOPERS</p>
+              <p>OUR BRANDS</p>
+              <p>CARRIERS</p>
+              <p>SOCIAL RESPONSIBILITY</p>
+              <p>NEWS AND MEDIA</p>
+              <p>INVESTORS</p>
+              <p>CUSTOMER SERVICE</p>
+              <p>SCHEDULE A SERVICE</p>
+              <p>MANAGE AN APPOINTMENT</p>
+          </div>
+          <div>
+           
+   
+            <h2>CUSTOMER SERVICE</h2>
+            <p>VISIT OUR SUPPORT CENTER</p>
+            <p>CUSTOMER SERVICE</p>
+              <p>SCHEDULE A SERVICE</p>
+              <p>MANAGE AN APPOINTMENT</p>
+            <p>EGIFTS CARDS</p>
+            <p>FUNERAL/SYMPATHY/ADVISORS</p>
+            <p>SMILE GUARENTEE</p>
+            <p>DO NOT SELL MY PERSONAL INFORMATION</p>
+            <p>CONTACT US</p>
+   
+          </div>
+         
+      </div>
+   
+      
+      <!-- ICONS -->
+     
+      <div id="icons"><img src=".\Photos\facebook.png" alt=".\facebook.png">
+         <!-- twitter -->
+         <img src=".\Photos\twitter.png" alt="">
+         <!-- instagram -->
+         <img src=".\Photos\instagram.png" alt="">
+      
+         <!-- pinterest -->
+         <img src=".\Photos\pinterest (1).png" alt="">
+         <!-- youtube -->
+       <img src=".\Photos\youtube.png" alt="">
+   </div>
+   </div>
+   </div>
     
 </body>
 </html>
+<script src="wishlist.js"></script>

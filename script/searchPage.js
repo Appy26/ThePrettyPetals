@@ -83,6 +83,8 @@ if(searchKeyword){
 
 // Default Search Result
 async function searchResult(i) {
+    let loader =document.getElementById("loader")
+    loader.style.display="block"
     let request = await fetch(`${url}products?_limit=12&_page=${i}`);
     let result = await request.json();
     Data = result;
