@@ -690,7 +690,7 @@ h4 {
        
         #nav{
             display:flex;
-            width: 100%;
+            width: 60%;
             justify-content: space-around;
         }
         #inp{
