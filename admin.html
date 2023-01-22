@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Admin Dashboard </title>
+    <link rel="stylesheet" href="./Styles/admin.css">
+    <link rel="icon" type="image/x-icon" href="./Photos/logo1.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details" onclick="location.href=`./index.html`">
+            <!-- logo -->
+           <img style="width:100%"src="./Photos/logo1.png" alt="">
+        </div>
+        <ul class="nav-links">
+            <li style="background-color: #081D45;">
+                <a href="admin.html" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="add_product.html">
+                    <i class='bx bx-folder-plus'></i>
+                    <span class="links_name">Add Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="edit_product.html">
+                    <i class='bx bx-edit-alt'></i>
+                    <span class="links_name">Edit Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="delete_product.html">
+                    <i class='bx bx-message-square-minus'></i>
+                    <span class="links_name">Delete Product</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="/index.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log out </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <!-- <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div> -->
+            <div class="profile-details" id="profile-details">
+                <!-- Imageg -->
+                <div id="img-admin"></div>
+                <!-- Admin name -->
+                <span class="admin_name">Hey <span id="admin_name"></span></span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Items</div>
+                        <div class="number" id="totalApicount">0</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-cart-alt cart'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Newly Add</div>
+                        <div class="number" id="NewlyAdd">0</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-add cart two'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Edited</div>
+                        <div class="number" id="TotalEdited">0</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-cart cart three'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Deleted Items</div>
+                        <div class="number" id="TotalDelete">0</div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-download cart four'></i>
+                </div>
+            </div>
+
+            <div class="sales-boxes">
+                <div class="recent-sales box">
+                    <div class="title">Admin Details :-</div>
+                    <div class="sales-details">
+                        <!-- Fetch Admin Details -->
+                    </div>
+                </div>
+                <div class="top-sales box">
+                    <div class="title">Admin's Team</div>
+                    <ul class="top-sales-details">
+                        <li>Ashish Kumar (IA-Manager).</li>
+                        <li>Aparna Singh(Team Lead).</li>
+                        <li> Rishab kr Chaurasiya(Team Member)</li>
+                        <li>Shireesha (Team Member)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script/admin.js"></script>
+
+</body>
+
+</html>

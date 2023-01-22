@@ -62,14 +62,6 @@ function Search() {
 
 
 
-
-
-
-
-
-
-
-
 const url = `https://jsson-testing.onrender.com/`;
 const form = document.querySelector("form");
 
@@ -85,7 +77,8 @@ form.addEventListener("submit",(e)=>{
         email:form.email.value,
         pass:form.pass.value,
         cart:[],
-        wishlist:[]
+        wishlist:[],
+        ordered:[]
     }
 
     // Form Validation Here

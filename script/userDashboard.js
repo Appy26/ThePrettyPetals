@@ -72,7 +72,8 @@ function createDOM() {
     <h3>User Detais</h3>
     <p><span class="name">Name:- </span><span class="span">${userData.firstName} ${userData.lastName}</span></p>
     <p><span class="name">E-mail:- </span><span class="span">${userData.email}</span></p>
-    </div>`
+    </div>
+    <div id="log-out">Sign out</div>`
 }
 async function createDOM2() {
 
@@ -80,6 +81,11 @@ async function createDOM2() {
     let req = await fetch(`${url}register/${userData.id}`);
     let res = await req.json();
     let data = res.ordered;
+
+    if(!data || data.length == 0){
+        cont2.innerHTML = `<h2>No Items to show here</h2>`
+        return;
+    }
 
     cont2.innerHTML = data.map(el=>{
         return `<div id="card">
@@ -93,4 +99,19 @@ async function createDOM2() {
         </div>
     </div>`
     }).join("");
+    
 }
+
+// Logout Functionality
+document.getElementById("log-out").addEventListener("click",()=>{
+
+    if(window.confirm("Are you Sure, You Want to Sign Out?")){
+        // action you want to perform
+        localStorage.clear("signedIn");
+        localStorage.clear("user");
+        localStorage.clear("product");
+        localStorage.clear("search");
+        localStorage.clear("product_details");
+        window.open(`./index.html`,"_self")
+    }
+});

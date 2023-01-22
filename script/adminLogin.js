@@ -39,16 +39,12 @@ function signedIn() {
         btn1.setAttribute("id", "loginBtn");
         btn1.setAttribute("onclick", "location.href=`./loginPage.html`");
 
-        let btn2 = document.createElement("button");
-        btn2.setAttribute("id", "registerBtn");
-        btn2.setAttribute("onclick", "location.href=`./registerPage.html`");
-
+    
         btn1.innerText = "Login";
-        btn2.innerText = "Register";
 
-        CheckingIfLogIn.style.marginRight = "7%"
+        CheckingIfLogIn.style.marginRight = "7%";
 
-        CheckingIfLogIn.append(btn1,btn2);
+        CheckingIfLogIn.append(btn1);
     }
 }
 // Search input part
@@ -96,7 +92,7 @@ form.addEventListener("submit",(e)=>{
     // Creating Fetch request of POST
     async function fetchReq(creadentialsData){
         try {
-            let request = await fetch(`${url}register`)
+            let request = await fetch(`${url}admin`)
             var result = await request.json();
             var authentication = false;
 
@@ -105,9 +101,9 @@ form.addEventListener("submit",(e)=>{
             }
 
             if(authentication){
-                localStorage.setItem("signedIn","true");
-                if(window.confirm("Registration Successful. Click 'OK' to Login")){
-                    window.open(`./userDashboard.html`,"_self");
+                localStorage.setItem("admin-signed","true");
+                if(window.confirm("Login Successful. Click 'OK' to go to Admin Dashboard")){
+                    window.open(`./admin.html`,"_self");
                 }
             } else {
                 alert("Email or Password is Incorrect");
@@ -118,7 +114,7 @@ form.addEventListener("submit",(e)=>{
 
             let errorMsg = setTimeout(()=>{
                 if(window.confirm("Oops!! Looks like Backend server isn't Responding. Please Login with Admin credentials")){
-                    window.open(`./userDashboard.html`,"_self");
+                    window.open(`./admin.html`,"_self");
                 }
             },2000)
 
@@ -127,9 +123,9 @@ form.addEventListener("submit",(e)=>{
 
             if(authentication){
                 clearInterval(errorMsg);
-                localStorage.setItem("signedIn","true");
+                localStorage.setItem("admin-signed","true");
                 if(window.confirm("Login Successful. Click 'OK' to place Orders")){
-                    window.open(`./userDashboard.html`,"_self");
+                    window.open(`./admin.html`,"_self");
                 }
             }
         }
@@ -138,15 +134,10 @@ form.addEventListener("submit",(e)=>{
             for(let el of data){
                 if(el.email === credentials.email && el.pass === credentials.pass){
                     authentication = true;
-                    localStorage.setItem("user",JSON.stringify(el));
+                    localStorage.setItem("admin",JSON.stringify(el));
                     break;
                 }
             }
         }
     }
 })
-
-// Admin Login
-document.getElementById("admin").addEventListener("click",()=>{
-    window.location.href = "./adminLogin.html"
-});

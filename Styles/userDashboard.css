@@ -165,6 +165,15 @@
 }
 #second-cont h1{
     text-align: center;
+    background-color: #b8a3df;
+    border-radius: 10px;
+    padding: 15px;
+    color: rgb(43, 42, 42);
+}
+#second-cont h2{
+    text-align: center;
+    margin-top: 20px;
+    color: red;
 }
 #second-cont img{
     height: 190px;
@@ -187,4 +196,17 @@
     border-radius: 10px;
     width: fit-content;
     padding: 10px;
+}
+#log-out{
+    margin: auto;
+    background-color: rgb(230, 130, 130);
+    color: #ffffff;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+#log-out:hover{
+    cursor: pointer;
 }
