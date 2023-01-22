@@ -6,23 +6,28 @@
   text-transform: capitalize;
   transition: all .2s linear;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:25px;
   min-height: 100vh;
   margin-right: 90px;
-  
+  border-radius: 15px;
 }
 
 .container form{
-  padding:20px;
-  width:700px;
+  padding:50px;
+  width:60%;
   background: #fff;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
   margin-left: 30px;
+  border-radius: 15px;
 }
 
 .container form .row{
@@ -91,6 +96,48 @@
 .container form .submit-btn:hover{
   background: #2ecc71;
 }
+
+/* OTP */
+#otp{
+  background-color: white;
+  padding: 40px;
+  width: fit-content;
+  visibility: hidden;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+#otp h1, #otp h3, #otp h4{
+  font-family: sans-serif;
+  font-weight: 500;
+}
+#otp h3{
+  margin: 10px 0px 10px 0px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+#otp input{
+  height: 25px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: gainsboro;
+}
+#otp input:focus{
+  outline: none;
+}
+#otp button{
+  line-height: 35px;
+  width: 80px;
+  margin-left: 10px;
+}
+#otp button:hover{
+  cursor: pointer;
+}
+/* Navigation Bar */
 #nav img{
   width:10%;
 }

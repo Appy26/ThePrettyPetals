@@ -32,6 +32,7 @@ body {
    height: fit-content;
    border-radius: 10px;
    padding: 20px;
+   width: 60%;
 }
 #card-items{
    display: flex;
@@ -70,7 +71,7 @@ body {
 }
 
 #second-cont{
-   margin-left: 120px;
+   margin-left: 100px;
    background-color: #fff;
    padding: 25px;
    height: fit-content;
@@ -79,6 +80,38 @@ body {
 }
 #checkout{
    background-color: #4CBE33;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   margin-top: 25px;
+   font-family: sans-serif;
+   font-weight: 500;
+   color: #ffff;
+}
+#checkout:hover{
+   cursor: pointer;
+}
+.remove{
+   background-color: rgb(243, 103, 103);
+   height: 30px;
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   color: #fff;
+   width: fit-content;
+   padding: 15px;
+}
+.remove:hover{
+   cursor: pointer;
+}
+.summary{
+   font-family: sans-serif;
+   font-weight: 600;
+
 }
 
 

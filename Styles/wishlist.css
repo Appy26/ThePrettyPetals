@@ -1,324 +1,295 @@
-#nav img{
-    width:10%;
- }
- #nav{
-    display:flex;
-    justify-content: space-between;
-    background-color:#301662;
-    color:white;
-    margin:auto;
-    padding: 2px;
-    align-items: center;
-    padding-right: 20px;
- }
- #logo:hover{
-    cursor: pointer;
- }
- #inp {
-    width:30%;
-    padding: 0px 30px;
-    border-radius:19px;
-    height:50px;
- }
- #inp:focus{
-    outline: none;
- }
- #searchBtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:7px;
-    width:7%;
-    border-radius:25px;
-    margin-right: 25%;
-    background-color:#ded5ec;
-    color:rgb(21, 16, 44);
-    font-weight: 500;
-    height:30px;
-    border:1.5px solid rgb(0, 0, 0);
-    font-family: sans-serif;
- }
- #searchBtn:hover{
-    cursor: pointer;
- }
- #logos{
-    display: flex;
-    width: 20%;
-    justify-content: space-between;
-    /* visibility: hidden; */
- }
- 
- #nav-third-div{
-    display: flex;
-    width: 15%;
-    justify-content: space-between;
- }
- /* SignedIn Part */
- #signedIn{
-    display: flex;
-    border: 1px solid red;
-    justify-content: space-between;
- }
- #signedIn:hover{
-    cursor: pointer;
- }
- #loginBtn,#registerBtn{
-    position: relative;
-    overflow: hidden;
-    height: fit-content;
-    line-height: 1.2cm;
-    width: 2.5cm;
-    border-radius: 20px;
-    font-family: sans-serif;
-    color: #457eff;
-    background-color: white;
-    border:  2px solid #457eff;
-    font-size: 0.4cm;
-    font-weight: 700;
- }
- #loginBtn{
-    margin-right: 30px;
- }
- 
- /* Testing */
- 
- #loginBtn:hover{
-    color: #84a4ee;
-    cursor: pointer;
- }
- #registerBtn:hover{
-    cursor: pointer;
-    color: #84a4ee;
- }
- #nav-third-div > button::before{
-    content: '';
-    position: absolute;
-    width: 5px;
-    top: 0;
-    bottom: 0;
-    left: -32px;
-    transform: rotate(-16deg);
-    filter: blur(4px);
- }
- #loginBtn::before{
-    background: #457eff;
- }
- #registerBtn::before{
-    background:#457eff;
- }
- 
- #nav-third-div > button:hover::before{
-    left: calc(100% + 32px);
-    transition: 0.75s;
- }
- /* Till here */
- #nav-third-div img{
-    height: 30px;
-    width: 30px;
- }
- #nav-third-div div:hover{
-    cursor: pointer;
- }
- * {
-    box-sizing: border-box;
-  }
-  body{
-      font-family: sans-serif;
-      background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
-      background-size: 100% 100%;
-      height: 100vh;
-      background-attachment: fixed;
-      
-  }
-          .container{
-              background-color:rgb(243, 244, 245);
-              width:85%;
-              height: 500px;
-              margin-top: 60px;
-              display: flex;
-              margin-left: 80px;
-               border-radius: 10px;
-              justify-content:space-evenly;
-              
-          }
-          h1{
-            margin-left: 20px;
-          }
-          .flip-card1 {
-    background-color: transparent;
-    width: 500px;
-    height: 250px;
-    perspective: 1000px;
-    float:left;
-    margin-left: -30px;
-    border-radius: 20px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 80%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    background-color:white;
-  }
-  
-  
-  
-  .flip-card-front {
-    
-    color: black;
-    margin-top: -20px;
-  
-    
-  }
-  
-  
-  .flip-card1 img{
-      height: 100px;
-      width: 100px;
-      display: flex;
-      justify-content: start;
-      margin-left: 10px;
-    
-  
-  }
-  .container button{
-      width: 500px;
-      height: 30px;
-      background-color: purple;
-      margin-top: -10px;
-      border-radius: 10px;
-      padding: 10px;
-      margin-bottom: -100px;
-      align-items:flex-start;
-  }
-  .flip-card1 button{
-      margin-bottom: 10px;
-  }
-  
-  
-  
-        .siri{
-          border-radius: 10px;
-          height: 100px;
-          width:500px;
-          border:20px;
-          box-shadow: 0px 0px 5px 0px;
-          padding-left: 13px;
-          background-color: white;
-          
-        }
-        .siri button{
-          height:40px;
-          width:95%;
-          border: none;
-          font-size: 16px;
-          color: white;
-          
-        }
-        .flip-card-front h3{
-          text-align: left;
-          margin-left: 10px;
-        }
-        .flip-card-front hr{
-          width:500px;
-          margin-top: -15px;
-        }
-        
-        
-        
-        
-        .sri{
-          font-size: 200px;
-        }
-        
-        .baby img{
-          height: 20px;
-          width: 20px;
-        
-          text-align: end;
-        }
-        .amit{
-          display: flex;
-          
-          
-        }
-        .amit h4{
-          text-align: left;
-          margin-left: 20px;
-          font-size: 13px;
-          margin-top: -2px;
-        }
-        .amit p{
-          text-align: left;
-          margin-left: -105px;
-          font-size: 10px;
-          margin-top: 20px;
-  
-        }
-        .siri1{
-          margin-top: 30px;
-          margin-left: -50px;
-          
-        }
-        
-        #icons img{
-            width:130%;
-        }
-        
-        /* Footer */
-        .footer{
-            margin-top:2%;
-           display:flex;
-           justify-content: space-between;
-           background-color:#412b6b;
-           padding: 2% 5%;
-           color:white;
-        }
-        .footer h2{
-           width:100%;
-           margin-left: 5%;
-           font-family: sans-serif;
-           margin: 20px 0px;
-           font-weight: 400;
-           padding:7px;
-        }
-        .footer>div:nth-child(1) p{
-           color:white;
-           margin-left:5%;
-           margin-top: 10px;
-           border:0px solid white;
-           width:90%
-        }
-        .footer>div:nth-child(2){
-           padding:7px;
-           width:95%;
-           height:50px;
-           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-           text-align: center;
-        }
-        #icons{
-           margin-top: 2%;
-           display:grid;
-           grid-template-columns: repeat(5,1fr);
-           gap:30px;
-           width:60%;
-           color:white;
-           margin-left: 10%;
-           /* width:80%; */
-           border:0px solid #4d96e3;
-           padding:7px;
-           margin-top: 7%;
-        }
-        #pTag{
-           display:grid;
-           grid-template-columns: repeat(4,1fr);
-           gap:30px;
-           border:0px solid white;
-           width:200%;
-        }
-        
+#nav img {
+   width: 10%;
+}
+
+#nav {
+   display: flex;
+   justify-content: space-between;
+   background-color: #301662;
+   color: white;
+   margin: auto;
+   padding: 2px;
+   align-items: center;
+   padding-right: 20px;
+}
+
+#logo:hover {
+   cursor: pointer;
+}
+
+#inp {
+   width: 30%;
+   padding: 0px 30px;
+   border-radius: 19px;
+   height: 50px;
+}
+
+#inp:focus {
+   outline: none;
+}
+
+#searchBtn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 7px;
+   width: 7%;
+   border-radius: 25px;
+   margin-right: 25%;
+   background-color: #ded5ec;
+   color: rgb(21, 16, 44);
+   font-weight: 500;
+   height: 30px;
+   border: 1.5px solid rgb(0, 0, 0);
+   font-family: sans-serif;
+}
+
+#searchBtn:hover {
+   cursor: pointer;
+}
+
+#logos {
+   display: flex;
+   width: 20%;
+   justify-content: space-between;
+   /* visibility: hidden; */
+}
+
+#nav-third-div {
+   display: flex;
+   width: 15%;
+   justify-content: space-between;
+}
+
+/* SignedIn Part */
+#signedIn {
+   display: flex;
+   border: 1px solid red;
+   justify-content: space-between;
+}
+
+#signedIn:hover {
+   cursor: pointer;
+}
+
+#loginBtn, #registerBtn {
+   position: relative;
+   overflow: hidden;
+   height: fit-content;
+   line-height: 1.2cm;
+   width: 2.5cm;
+   border-radius: 20px;
+   font-family: sans-serif;
+   color: #457eff;
+   background-color: white;
+   border: 2px solid #457eff;
+   font-size: 0.4cm;
+   font-weight: 700;
+}
+
+#loginBtn {
+   margin-right: 30px;
+}
+
+/* Testing */
+
+#loginBtn:hover {
+   color: #84a4ee;
+   cursor: pointer;
+}
+
+#registerBtn:hover {
+   cursor: pointer;
+   color: #84a4ee;
+}
+
+#nav-third-div>button::before {
+   content: '';
+   position: absolute;
+   width: 5px;
+   top: 0;
+   bottom: 0;
+   left: -32px;
+   transform: rotate(-16deg);
+   filter: blur(4px);
+}
+
+#loginBtn::before {
+   background: #457eff;
+}
+
+#registerBtn::before {
+   background: #457eff;
+}
+
+#nav-third-div>button:hover::before {
+   left: calc(100% + 32px);
+   transition: 0.75s;
+}
+
+/* Till here */
+#nav-third-div img {
+   height: 30px;
+   width: 30px;
+}
+
+#nav-third-div div:hover {
+   cursor: pointer;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   background-image: url("https://w0.peakpx.com/wallpaper/168/788/HD-wallpaper-flowers-purple-flower-pink-blue-couple.jpg");
+   background-size: 100% 100%;
+   height: 100vh;
+   background-attachment: fixed;
+
+}
+
+/* Conatiner */
+#shopping-title{
+   text-align: center;
+   font-family: sans-serif;
+   font-weight: 700;
+   font-size: 25px;
+}
+.container {
+   background-color: #D5BFE7;
+   width: 60%;
+   display: flex;
+   margin: auto;
+   margin-top: 60px;
+   margin-bottom: 100px;
+   padding: 50px;
+   border-radius: 20px;
+}
+#first-cont{
+   background-color: #fff;
+   height: fit-content;
+   border-radius: 10px;
+   padding: 20px;
+   width: 90%;
+   margin: auto;
+}
+#card-items{
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+   font-family: sans-serif;
+}
+.card{
+   display: flex;
+   background-color: #D5BFE7;
+   border-radius: 10px;
+   margin-top: 30px;
+   padding: 10px;
+}
+.card > div:nth-child(2){
+   margin-left: 30px;
+}
+#card-items img{
+   width: 150px;
+   height: 150px;
+   border-radius: 15px;
+}
+.card button{
+   border: none;
+   border-radius: 3px;
+   height: 30px;
+   width: 30px;
+}
+.card button:hover{
+   cursor: pointer;
+   background-color: rgb(140, 94, 189);
+}
+.card span{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.remove,.add-to-cart{
+   background-color: rgb(243, 103, 103);
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   color: #fff;
+   width: fit-content;
+   padding: 15px;
+   margin-right: 30px;
+}
+.add-to-cart{
+   background-color: rgb(78, 216, 78);
+}
+.rem{
+   display: flex;
+}
+.remove:hover,.add-to-cart{
+   cursor: pointer;
+}
+
+#icons img {
+   width: 130%;
+}
+
+/* Footer */
+.footer {
+   margin-top: 2%;
+   display: flex;
+   justify-content: space-between;
+   background-color: #412b6b;
+   padding: 2% 5%;
+   color: white;
+}
+
+.footer h2 {
+   width: 100%;
+   margin-left: 5%;
+   font-family: sans-serif;
+   margin: 20px 0px;
+   font-weight: 400;
+   padding: 7px;
+}
+
+.footer>div:nth-child(1) p {
+   color: white;
+   margin-left: 5%;
+   margin-top: 10px;
+   border: 0px solid white;
+   width: 90%
+}
+
+.footer>div:nth-child(2) {
+   padding: 7px;
+   width: 95%;
+   height: 50px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   text-align: center;
+}
+
+#icons {
+   margin-top: 2%;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 30px;
+   width: 60%;
+   color: white;
+   margin-left: 10%;
+   /* width:80%; */
+   border: 0px solid #4d96e3;
+   padding: 7px;
+   margin-top: 7%;
+}
+
+#pTag {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+   border: 0px solid white;
+   width: 200%;
+}
