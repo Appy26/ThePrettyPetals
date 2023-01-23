@@ -1,3 +1,16 @@
+// Loader
+document.onreadystatechange = function() {
+if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".mesh-loader").style.visibility = "visible";
+} else {
+    document.querySelector(".mesh-loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+}
+};
+// Till here
+
+
 const CheckingIfLogIn = document.getElementById("nav-third-div");
 // Checking if signedIn
 signedIn()
@@ -19,6 +32,10 @@ function signedIn() {
         img2.src = "./Photos/user.png";
         img3.src = "./Photos/shopping-cart.png";
         img4.src = "./Photos/wishlist.png";
+
+        div2.setAttribute("onclick", "location.href=`./userDashboard.html`");
+        div3.setAttribute("onclick", "location.href=`./cartPage.html`");
+        div4.setAttribute("onclick", "location.href=`./wishlist.html`");
 
         div1.append(img1);
         div2.append(img2);

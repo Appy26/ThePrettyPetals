@@ -21,6 +21,10 @@ function signedIn() {
         img3.src = "./Photos/shopping-cart.png";
         img4.src = "./Photos/wishlist.png";
 
+        div2.setAttribute("onclick", "location.href=`./userDashboard.html`");
+        div3.setAttribute("onclick", "location.href=`./cartPage.html`");
+        div4.setAttribute("onclick", "location.href=`./wishlist.html`");
+
         div1.append(img1);
         div2.append(img2);
         div3.append(img3);
