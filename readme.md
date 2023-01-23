@@ -1,34 +1,30 @@
 JS 201 CONSTRUCT WEEK PROJECT
 ![logo1](https://user-images.githubusercontent.com/112754870/213362216-99b8ee61-93e4-430f-95eb-d0281cf643ff.png)
-# Ainak 
-# Ainak_website_photos
+# The Pretty petals
+# The Pretty Petals_website_photos
 
-This is the photos of the Ainak website. Ainak is an online Ecommerce Website which is providing high quality eyewear. From this website, users can Order Computer Glasses,Sun Glasses,Kids Glasses and much more across the world.
+This is the photos of the The Pretty Petals website. The Pretty Petals is an online Ecommerce Website which is providing fresh flowers and bouquets. From this website, users can Order fresh flowers and combination of flowers  and much more across the world.
 
 **To see the live site click the below link.**
 
-https://prismatic-taiyaki-f69ca6.netlify.app/
+https://dulcet-figolla-1e3b3e.netlify.app
 
 ## Built with
 <ul>
-  <li>React js</li>
-  <li>Redux</li>
+ 
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
+  <li>JSON server</li>
 </ul>
 
 ## Used libraries
 <ul>
   <li>node modules</li>
   <li>Styled-Components</li>
-  <li>axios</li>
-  <li>React Js</li>
-  <li>Redux</li>
-  <li>React-router-dom</li>
-  <li>Chakra-UI</li>
-  <li>Chakra-UI-Icons</li>
-  <li>React Icons</li>
+ <li>HTML Components</li>
+ <li>Scripts files</li>
+ <li>Admin-panel</li>
 </ul>
 
 ## Features
@@ -38,18 +34,21 @@ https://prismatic-taiyaki-f69ca6.netlify.app/
     <li>Sorting</li>
   <li>Individual Item Pages</li>
   <li>Filtering glasses by their Type and category including Men,Women and Kids</li>
+  <li>Searching Functionality</li>
+  <li>Pagination</li>
 </ul>
 
 ## Some screenshots of the project
 
-<img src="./Screenshots/Ainak logo.jpg">
-<img src="./Screenshots/Screenshot (449).png">
-<img src="./Screenshots/Screenshot (451).png">
-<img src="./Screenshots/Screenshot (452).png">
-<img src="./Screenshots/Screenshot (453).png">
-<img src="./Screenshots/Screenshot (454).png">
-<img src="./Screenshots/Screenshot (455).png">
-<img src="./Screenshots/Screenshot (456).png">
+<img src="./Screenshots/The Pretty Petals logo.jpg">
+<img src="./screenshot/adminloginflower.jpg">
+<img src="./screenshot/category flower.jpg">
+<img src="./screenshot/cartpageflower.jpg">
+<img src="./screenshot/checkoutpage.jpg">
+<img src="./screenshot/dec page.jpg">
+<img src="./screenshot/homepageflower.jpg">
+<img src="./screenshot/userdashboard.jpg">
+<img src="./screenshot/login page flower.jpg">
 
 
 ### Thanks for reading
