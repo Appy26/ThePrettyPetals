@@ -20,6 +20,134 @@ input::-webkit-inner-spin-button {
   margin-right: 90px;
   border-radius: 15px;
 }
+#nav img {
+  width: 10%;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #301662;
+  color: white;
+  margin: auto;
+  padding: 5px;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#inp {
+  width: 30%;
+  padding: 0px 30px;
+  border-radius: 19px;
+  height: 50px;
+}
+
+#inp:focus {
+  outline: none;
+}
+
+#searchBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  width: 7%;
+  border-radius: 25px;
+  margin-right: 25%;
+  background-color: #ded5ec;
+  color: rgb(21, 16, 44);
+  font-weight: 500;
+  height: 30px;
+  border: 1.5px solid rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+
+#searchBtn:hover {
+  cursor: pointer;
+}
+
+#logos {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  /* visibility: hidden; */
+}
+
+#nav-third-div {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+}
+
+/* SignedIn Part */
+#signedIn {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+#signedIn:hover {
+  cursor: pointer;
+}
+
+#loginBtn, #registerBtn {
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+  line-height: 1.2cm;
+  width: 2.5cm;
+  border-radius: 20px;
+  font-family: sans-serif;
+  color: #457eff;
+  background-color: white;
+  border: 2px solid #457eff;
+  font-size: 0.4cm;
+  font-weight: 700;
+}
+
+#loginBtn {
+  margin-right: 30px;
+}
+
+/* Testing */
+
+#loginBtn:hover {
+  color: #84a4ee;
+  cursor: pointer;
+}
+
+#registerBtn:hover {
+  cursor: pointer;
+  color: #84a4ee;
+}
+
+#nav-third-div>button::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(-16deg);
+  filter: blur(4px);
+}
+
+#loginBtn::before {
+  background: #457eff;
+}
+
+#registerBtn::before {
+  background: #457eff;
+}
+
+#nav-third-div>button:hover::before {
+  left: calc(100% + 32px);
+  transition: 0.75s;
+}
 
 .container form{
   padding:50px;

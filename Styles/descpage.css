@@ -25,69 +25,78 @@ body{
 #nav img{
    width:10%;
 }
-#nav{
-   display:flex;
+#nav {
+   display: flex;
    justify-content: space-between;
-   background-color:#301662;
-   color:white;
-   margin:auto;
+   background-color: #301662;
+   color: white;
+   margin: auto;
    padding: 5px;
    align-items: center;
-   height:70px;
-   border:0px solid red
+   padding-right: 20px;
+   margin-top: -10px;
 }
-#logo:hover{
+
+#logo:hover {
    cursor: pointer;
 }
+
 #inp {
-   width:30%;
+   width: 30%;
    padding: 0px 30px;
-   border-radius:19px;
-   height:50px;
+   border-radius: 19px;
+   height: 50px;
 }
-#inp:focus{
+
+#inp:focus {
    outline: none;
 }
-#searchBtn{
+
+#searchBtn {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding:7px;
-   width:7%;
-   border-radius:25px;
+   padding: 7px;
+   width: 7%;
+   border-radius: 25px;
    margin-right: 25%;
-   background-color:#ded5ec;
-   color:rgb(21, 16, 44);
+   background-color: #ded5ec;
+   color: rgb(21, 16, 44);
    font-weight: 500;
-   height:30px;
-   border:1.5px solid rgb(0, 0, 0);
+   height: 30px;
+   border: 1.5px solid rgb(0, 0, 0);
    font-family: sans-serif;
 }
-#searchBtn:hover{
+
+#searchBtn:hover {
    cursor: pointer;
 }
-#logos{
+
+#logos {
    display: flex;
    width: 20%;
    justify-content: space-between;
    /* visibility: hidden; */
 }
 
-#nav-third-div{
+#nav-third-div {
    display: flex;
    width: 15%;
    justify-content: space-between;
 }
+
 /* SignedIn Part */
-#signedIn{
+#signedIn {
    display: flex;
    border: 1px solid red;
    justify-content: space-between;
 }
-#signedIn:hover{
+
+#signedIn:hover {
    cursor: pointer;
 }
-#loginBtn,#registerBtn{
+
+#loginBtn, #registerBtn {
    position: relative;
    overflow: hidden;
    height: fit-content;
@@ -97,25 +106,28 @@ body{
    font-family: sans-serif;
    color: #457eff;
    background-color: white;
-   border:  2px solid #457eff;
+   border: 2px solid #457eff;
    font-size: 0.4cm;
    font-weight: 700;
 }
-#loginBtn{
+
+#loginBtn {
    margin-right: 30px;
 }
 
 /* Testing */
 
-#loginBtn:hover{
+#loginBtn:hover {
    color: #84a4ee;
    cursor: pointer;
 }
-#registerBtn:hover{
+
+#registerBtn:hover {
    cursor: pointer;
    color: #84a4ee;
 }
-#nav-third-div > button::before{
+
+#nav-third-div>button::before {
    content: '';
    position: absolute;
    width: 5px;
@@ -125,14 +137,16 @@ body{
    transform: rotate(-16deg);
    filter: blur(4px);
 }
-#loginBtn::before{
+
+#loginBtn::before {
    background: #457eff;
 }
-#registerBtn::before{
-   background:#457eff;
+
+#registerBtn::before {
+   background: #457eff;
 }
 
-#nav-third-div > button:hover::before{
+#nav-third-div>button:hover::before {
    left: calc(100% + 32px);
    transition: 0.75s;
 }
