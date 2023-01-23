@@ -1,4 +1,3 @@
-// navigation bar
 const CheckingIfLogIn = document.getElementById("nav-third-div");
 // Checking if signedIn
 
@@ -55,7 +54,6 @@ function Search() {
         btn.onclick="location.href=`./searchPage.html`";
     })
 }
-
 
 var user = JSON.parse(localStorage.getItem("user"));
 const url = `https://jsson-testing.onrender.com/`;
