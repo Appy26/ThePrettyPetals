@@ -74,7 +74,8 @@ addButton.addEventListener("click", (event) => {
         image: productCategory.value,
         name: productTitle.value,
         priceKey: productPrice.value,
-        price : `$${productPrice.value}`
+        price : `$${productPrice.value}`,
+        color:"blue"
     };
 
     addData(obj);

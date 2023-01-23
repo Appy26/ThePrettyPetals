@@ -1,8 +1,9 @@
 const checkingIfSignedIn = document.getElementById("nav-third-div");
+var signedIn = localStorage.getItem("signedIn");
 // Checking if signedIn
-signedIn()
-function signedIn() {
-    let signedIn = localStorage.getItem("signedIn");
+signedInn()
+function signedInn() {
+    
 
     if(signedIn == "true"){
         checkingIfSignedIn.innerHTML = null;
@@ -85,8 +86,13 @@ function createDOM() {
     div1.append(img);
     cont.append(div1,div2);
 }
+
+// Wishlist
 document.getElementById("wishlist").addEventListener("click", async()=>{
-    
+    if(signedIn != "true"){
+        alert("Please Login First");
+        return
+    }
     let product = JSON.parse(localStorage.getItem("product"));
     let user = JSON.parse(localStorage.getItem("user"));
 
@@ -124,7 +130,12 @@ document.getElementById("wishlist").addEventListener("click", async()=>{
     }
 });
 
+// Cart
 document.getElementById("cart").addEventListener("click", async()=>{
+    if(signedIn != "true"){
+        alert("Please Login First");
+        return
+    }
     let product = JSON.parse(localStorage.getItem("product"));
     let user = JSON.parse(localStorage.getItem("user"));
 
