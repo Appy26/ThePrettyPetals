@@ -57,7 +57,7 @@ function displayCards(data) {
         // let str = element.discription;
         // discription.innerText = `${str.substring(0, 25)}...`;
         let price = document.createElement("h4");
-        price.innerHTML = `<h4>&#8377; ${element.price}</h4>`;
+        price.innerHTML = `<h4> ${element.price}</h4>`;
 
         div.append(img, id,tit, price);
         document.querySelector(".sales-details").append(div);
@@ -74,7 +74,8 @@ addButton.addEventListener("click", (event) => {
         image: productCategory.value,
         name: productTitle.value,
         priceKey: productPrice.value,
-        price : `$${productPrice.value}`
+        price : `$${productPrice.value}`,
+        color:"blue"
     };
 
     addData(obj);
