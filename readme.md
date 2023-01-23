@@ -42,11 +42,11 @@ https://dulcet-figolla-1e3b3e.netlify.app
 
 <img src="./Photos/logo1.png">
 <img src="./screenshot/adminloginflower.jpg">
-<img src="./screenshot/categoryflower.jpg">
+<img src="./screenshot/category.jpg">
 <img src="./screenshot/cartpageflower.jpg">
 <img src="./screenshot/checkoutpage.jpg">
 <img src="./screenshot/decpage.jpg">
-<img src="./screenshot/homepageflower.jpg">
+<img src="./screenshot/hompageflower.jpg">
 <img src="./screenshot/userdashboard.jpg">
 <img src="./screenshot/loginpageflower.jpg">
 
