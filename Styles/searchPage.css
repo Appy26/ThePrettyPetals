@@ -334,4 +334,102 @@ body{
     border:0px solid white;
     width:200%;
  }
+ @media all and (min-width:510px) and (max-width:1500px){
+   #logo{
+display:none
+   }
+  
+  
+    #nav{
+        display:flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    #inp{
+     display:none
+    }
+    #searchBtn{
+     display:none
+    }
+    #nav-third-div{
+/* display:flex;
+flex-wrap: wrap; */
+width:100%;
+    }
+    .nav2{
+        display: none;
+        /* grid-template-columns: repeat(5,1fr); */
+    }
+    /* .nav2:hover{
+     display:block;
+     grid-template-columns: repeat(3,1fr);
+    } */
+    .footer{
+      display:flex;
+      flex-wrap: wrap;
+   }
+   #pTag{
+      display:flex;
+      flex-wrap: wrap; 
+   }
+   .filtering{
+      display:none
+   }
+   #search-results img{
+width:100%
+   }
+   #pagination {
+      display:none
+   }
+   }
+
+   @media all and (min-width:200px) and (max-width:500px){
+      #logo{
+         display:none
+            }
+           
+           
+             #nav{
+                 display:flex;
+                 width: 100%;
+                 justify-content: space-around;
+             }
+             #inp{
+              display:none
+             }
+             #searchBtn{
+              display:none
+             }
+             #nav-third-div{
+               /* display:flex;
+               flex-wrap: wrap;
+               border:0px solid red; */
+               width:100%
+             }
+             .nav2{
+                 display: none;
+                 /* grid-template-columns: repeat(5,1fr); */
+             }
+             /* .nav2:hover{
+              display:block;
+              grid-template-columns: repeat(3,1fr);
+             } */
+             .footer{
+               display:flex;
+               flex-wrap: wrap;
+            }
+            #pTag{
+               display:flex;
+               flex-wrap: wrap; 
+            } 
+            .filtering{
+               display:none
+            }
+            #search-results img{
+               width:100%
+                  }
+                  #pagination {
+      display:none
+   }
+   }
  
