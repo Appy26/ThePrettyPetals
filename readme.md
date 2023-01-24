@@ -33,8 +33,8 @@ https://dulcet-figolla-1e3b3e.netlify.app
   <li>Login</li>
     <li>Sorting</li>
   <li>Individual Item Pages</li>
-  <li>Filtering glasses by their Type and category including Men,Women and Kids</li>
-  <li>Searching Functionality</li>
+<li>Searching Functionality</li>
+<li>filtering by colours</li>
   <li>Pagination</li>
 </ul>
 
