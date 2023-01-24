@@ -1,8 +1,9 @@
-#nav img{
-   width:10%;
+#nav img {
+   width: 10%;
 }
-#nav{
-   display:flex;
+
+#nav {
+   display: flex;
    justify-content: space-between;
 
    background-color: #301662;
@@ -14,58 +15,67 @@
    padding-right: 20px;
    margin-top: -10px;
 }
-#logo:hover{
+
+#logo:hover {
    cursor: pointer;
 }
+
 #inp {
-   width:30%;
+   width: 30%;
    padding: 0px 30px;
-   border-radius:19px;
-   height:50px;
+   border-radius: 19px;
+   height: 50px;
 }
-#inp:focus{
+
+#inp:focus {
    outline: none;
 }
-#searchBtn{
+
+#searchBtn {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding:7px;
-   width:7%;
-   border-radius:25px;
+   padding: 7px;
+   width: 7%;
+   border-radius: 25px;
    margin-right: 25%;
-   background-color:#ded5ec;
-   color:rgb(21, 16, 44);
+   background-color: #ded5ec;
+   color: rgb(21, 16, 44);
    font-weight: 500;
-   height:30px;
-   border:1.5px solid rgb(0, 0, 0);
+   height: 30px;
+   border: 1.5px solid rgb(0, 0, 0);
    font-family: sans-serif;
 }
-#searchBtn:hover{
+
+#searchBtn:hover {
    cursor: pointer;
 }
-#logos{
+
+#logos {
    display: flex;
    width: 20%;
    justify-content: space-between;
    /* visibility: hidden; */
 }
 
-#nav-third-div{
+#nav-third-div {
    display: flex;
    width: 15%;
    justify-content: space-between;
 }
+
 /* SignedIn Part */
-#signedIn{
+#signedIn {
    display: flex;
    border: 1px solid red;
    justify-content: space-between;
 }
-#signedIn:hover{
+
+#signedIn:hover {
    cursor: pointer;
 }
-#loginBtn,#registerBtn{
+
+#loginBtn, #registerBtn {
    position: relative;
    overflow: hidden;
    height: fit-content;
@@ -75,25 +85,28 @@
    font-family: sans-serif;
    color: #457eff;
    background-color: white;
-   border:  2px solid #457eff;
+   border: 2px solid #457eff;
    font-size: 0.4cm;
    font-weight: 700;
 }
-#loginBtn{
+
+#loginBtn {
    margin-right: 30px;
 }
 
 /* Testing */
 
-#loginBtn:hover{
+#loginBtn:hover {
    color: #84a4ee;
    cursor: pointer;
 }
-#registerBtn:hover{
+
+#registerBtn:hover {
    cursor: pointer;
    color: #84a4ee;
 }
-#nav-third-div > button::before{
+
+#nav-third-div>button::before {
    content: '';
    position: absolute;
    width: 5px;
@@ -103,25 +116,30 @@
    transform: rotate(-16deg);
    filter: blur(4px);
 }
-#loginBtn::before{
+
+#loginBtn::before {
    background: #457eff;
 }
-#registerBtn::before{
-   background:#457eff;
+
+#registerBtn::before {
+   background: #457eff;
 }
 
-#nav-third-div > button:hover::before{
+#nav-third-div>button:hover::before {
    left: calc(100% + 32px);
    transition: 0.75s;
 }
+
 /* Till here */
-#nav-third-div img{
+#nav-third-div img {
    height: 30px;
    width: 30px;
 }
-#nav-third-div div:hover{
+
+#nav-third-div div:hover {
    cursor: pointer;
 }
+
 * {
    box-sizing: border-box;
 }
@@ -136,12 +154,13 @@ body {
 }
 
 /* Conatiner */
-#shopping-title{
+#shopping-title {
    text-align: center;
    font-family: sans-serif;
    font-weight: 700;
    font-size: 25px;
 }
+
 .container {
    background-color: #D5BFE7;
    width: 60%;
@@ -152,7 +171,8 @@ body {
    padding: 50px;
    border-radius: 20px;
 }
-#first-cont{
+
+#first-cont {
    background-color: #fff;
    height: fit-content;
    border-radius: 10px;
@@ -160,43 +180,50 @@ body {
    width: 90%;
    margin: auto;
 }
-#card-items{
+
+#card-items {
    display: flex;
    flex-direction: column;
    padding: 15px;
    font-family: sans-serif;
 }
-.card{
+
+.card {
    display: flex;
    background-color: #D5BFE7;
    border-radius: 10px;
    margin-top: 30px;
    padding: 10px;
 }
-.card > div:nth-child(2){
+
+.card>div:nth-child(2) {
    margin-left: 30px;
 }
-#card-items img{
+
+#card-items img {
    width: 150px;
    height: 150px;
    border-radius: 15px;
 }
-.card button{
+
+.card button {
    border: none;
    border-radius: 3px;
    height: 30px;
    width: 30px;
 }
-.card button:hover{
+
+.card button:hover {
    cursor: pointer;
    background-color: rgb(140, 94, 189);
 }
-.card span{
+
+.card span {
    margin-left: 10px;
    margin-right: 10px;
 }
 
-.remove,.add-to-cart{
+.remove, .add-to-cart {
    background-color: rgb(243, 103, 103);
    height: 30px;
    display: flex;
@@ -208,13 +235,16 @@ body {
    padding: 15px;
    margin-right: 30px;
 }
-.add-to-cart{
+
+.add-to-cart {
    background-color: rgb(78, 216, 78);
 }
-.rem{
+
+.rem {
    display: flex;
 }
-.remove:hover,.add-to-cart{
+
+.remove:hover, .add-to-cart {
    cursor: pointer;
 }
 
@@ -278,3 +308,98 @@ body {
    border: 0px solid white;
    width: 200%;
 }
+
+/* Loader */
+.mesh-loader {
+   overflow: hidden;
+   height: 100%;
+   width: 100%;
+}
+
+.mesh-loader .circle {
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background: #03A9F4;
+   border-radius: 50%;
+   margin: -12.5px;
+   -webkit-animation: mesh 3s ease-in-out infinite;
+   animation: mesh 3s ease-in-out infinite -1.5s;
+}
+
+.mesh-loader>div .circle:last-child {
+   -webkit-animation-delay: 0s;
+   animation-delay: 0s;
+}
+
+.mesh-loader>div {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+
+.mesh-loader>div:last-child {
+   -webkit-transform: rotate(90deg);
+   transform: rotate(90deg);
+}
+
+@-webkit-keyframes mesh {
+   0% {
+      -webkit-transform-origin: 50% -100%;
+      transform-origin: 50% -100%;
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+   }
+
+   50% {
+      -webkit-transform-origin: 50% -100%;
+      transform-origin: 50% -100%;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+
+   50.00001% {
+      -webkit-transform-origin: 50% 200%;
+      transform-origin: 50% 200%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform-origin: 50% 200%;
+      transform-origin: 50% 200%;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes mesh {
+   0% {
+      -webkit-transform-origin: 50% -100%;
+      transform-origin: 50% -100%;
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+   }
+
+   50% {
+      -webkit-transform-origin: 50% -100%;
+      transform-origin: 50% -100%;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+
+   50.00001% {
+      -webkit-transform-origin: 50% 200%;
+      transform-origin: 50% 200%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform-origin: 50% 200%;
+      transform-origin: 50% 200%;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+/* Till here */
