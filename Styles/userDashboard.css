@@ -1,9 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Navigation bar */
 #nav img {
     width: 10%;
-}
-
-#nav {
+ }
+ 
+ #nav {
     display: flex;
     justify-content: space-between;
     background-color: #301662;
@@ -12,24 +17,24 @@
     padding: 5px;
     align-items: center;
     padding-right: 20px;
-}
-
-#logo:hover {
+ }
+ 
+ #logo:hover {
     cursor: pointer;
-}
-
-#inp {
+ }
+ 
+ #inp {
     width: 30%;
     padding: 0px 30px;
     border-radius: 19px;
     height: 50px;
-}
-
-#inp:focus {
+ }
+ 
+ #inp:focus {
     outline: none;
-}
-
-#searchBtn {
+ }
+ 
+ #searchBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,37 +48,37 @@
     height: 30px;
     border: 1.5px solid rgb(0, 0, 0);
     font-family: sans-serif;
-}
-
-#searchBtn:hover {
+ }
+ 
+ #searchBtn:hover {
     cursor: pointer;
-}
-
-#logos {
+ }
+ 
+ #logos {
     display: flex;
     width: 20%;
     justify-content: space-between;
     /* visibility: hidden; */
-}
-
-#nav-third-div {
+ }
+ 
+ #nav-third-div {
     display: flex;
     width: 15%;
     justify-content: space-between;
-}
-
-/* SignedIn Part */
-#signedIn {
+ }
+ 
+ /* SignedIn Part */
+ #signedIn {
     display: flex;
     border: 1px solid red;
     justify-content: space-between;
-}
-
-#signedIn:hover {
+ }
+ 
+ #signedIn:hover {
     cursor: pointer;
-}
-
-#loginBtn, #registerBtn {
+ }
+ 
+ #loginBtn, #registerBtn {
     position: relative;
     overflow: hidden;
     height: fit-content;
@@ -86,25 +91,25 @@
     border: 2px solid #457eff;
     font-size: 0.4cm;
     font-weight: 700;
-}
-
-#loginBtn {
+ }
+ 
+ #loginBtn {
     margin-right: 30px;
-}
-
-/* Testing */
-
-#loginBtn:hover {
+ }
+ 
+ /* Testing */
+ 
+ #loginBtn:hover {
     color: #84a4ee;
     cursor: pointer;
-}
-
-#registerBtn:hover {
+ }
+ 
+ #registerBtn:hover {
     cursor: pointer;
     color: #84a4ee;
-}
-
-#nav-third-div>button::before {
+ }
+ 
+ #nav-third-div>button::before {
     content: '';
     position: absolute;
     width: 5px;
@@ -113,22 +118,22 @@
     left: -32px;
     transform: rotate(-16deg);
     filter: blur(4px);
-}
-
-#loginBtn::before {
+ }
+ 
+ #loginBtn::before {
     background: #457eff;
-}
-
-#registerBtn::before {
+ }
+ 
+ #registerBtn::before {
     background: #457eff;
-}
-
-#nav-third-div>button:hover::before {
+ }
+ 
+ #nav-third-div>button:hover::before {
     left: calc(100% + 32px);
     transition: 0.75s;
-}
-
-/* Till here */
+ }
+ 
+ /* Till here */
 #nav-third-div img {
     height: 30px;
     width: 30px;

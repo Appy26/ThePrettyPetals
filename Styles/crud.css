@@ -45,8 +45,17 @@ background: #2f248b
 background: #2f248b
 }
 
-
-
+/* Delete button */
+.delete{
+  padding: 5px;
+  background-color: rgb(236, 78, 78);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.delete:hover{
+  cursor: pointer;
+}
 /* ---------------scroll -----------------*/
 
   .sales-details {
