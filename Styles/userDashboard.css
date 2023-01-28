@@ -153,6 +153,7 @@
     background-color: #D5BFE7;
     margin-top: 30px;
     border-radius: 30px;
+    /* border:1px solid black; */
 }
 #first-cont{
     padding: 25px;
@@ -172,6 +173,7 @@
     text-align: center;
     background-color: #b8a3df;
     border-radius: 10px;
+   
     padding: 15px;
     color: rgb(43, 42, 42);
 }
@@ -215,3 +217,196 @@
 #log-out:hover{
     cursor: pointer;
 }
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #412b6b;
+    padding: 2% 5%;
+    color: white;
+    margin-top: 2%;
+ }
+ 
+ .footer h2 {
+    width: 100%;
+    margin-left: 5%;
+    font-family: sans-serif;
+    margin: 20px 0px;
+    font-weight: 400;
+    padding: 7px;
+ }
+ 
+ .footer>div:nth-child(1) p {
+    color: white;
+    margin-left: 5%;
+    margin-top: 10px;
+    border: 0px solid white;
+    width: 90%
+ }
+ 
+ .footer>div:nth-child(2) {
+    padding: 7px;
+    width: 95%;
+    height: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+ }
+ 
+ #icons {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 60%;
+    color: white;
+    margin-left: 10%;
+    /* width:80%; */
+    border: 0px solid #4d96e3;
+    padding: 7px;
+    margin-top: 7%;
+ }
+ 
+ #pTag {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    border: 0px solid white;
+    width: 200%;
+ }
+ 
+ h4 {
+    padding: 12px;
+    margin-top: 2px;
+    border: 0px solid red;
+ }
+ #icons {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 35%;
+    /* color:white; */
+    margin-left: 10%;
+    width: 80%;
+    border: 0px solid #4d96e3;
+    padding: 7px;
+ }
+ 
+ #icons img {
+    width: 90%;
+ }
+ @media all and (min-width:320px) and (max-width:780px){
+    #logo{
+display:none
+    }
+   
+   
+     #nav{
+         display:flex;
+         width: 60%;
+         justify-content: space-around;
+     }
+     #inp{
+      display:none
+     }
+     #searchBtn{
+      display:none
+     }
+     #nav-third-div{
+width: 65%;
+     }
+     .nav2{
+         display: none;
+         /* grid-template-columns: repeat(5,1fr); */
+     }
+     .nav2:hover{
+      display:block;
+      grid-template-columns: repeat(3,1fr);
+     }
+     #container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+     }
+     #first-cont{
+        width:80%
+     }
+     #second-cont{
+        width:80%
+     }
+     .footer{
+        display:flex;
+        flex-wrap: wrap;
+     }
+     #icons{
+        display:none;
+     }
+     #pTag{
+        display:flex;
+        flex-wrap: wrap; 
+     }
+    }
+
+    @media all and (min-width:320px) and (max-width:780px) {
+        #logo{
+           display:none
+                  }
+                  #banner{
+                    display:flex;
+                    flex-direction: column;
+                    border:1px solid red
+                 }
+        #nav {
+           display: flex;
+           width: 100%;
+           justify-content: space-around;
+        }
+     
+        #inp {
+           display: none
+        }
+     
+        #searchBtn {
+           display: none
+        }
+     
+        #nav-third-div {
+           width: 65%;
+        }
+     
+        .nav2 {
+           display: none;
+           /* grid-template-columns: repeat(5,1fr); */
+        }
+     
+        .nav2:hover {
+           display: block;
+           grid-template-columns: repeat(3, 1fr);
+        }
+        #container{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:10px;
+         }
+         #first-cont{
+            width:80%
+         }
+         #second-cont{
+            width:80%
+         }
+
+        .footer{
+            display:flex;
+            flex-wrap: wrap;
+         }
+         #pTag{
+            display:flex;
+            flex-wrap: wrap; 
+         }
+         #icons{
+            display:none;
+         }
+ 
+    }

@@ -33,8 +33,13 @@ https://dulcet-figolla-1e3b3e.netlify.app
   <li>Login</li>
     <li>Sorting</li>
   <li>Individual Item Pages</li>
+
+<li>Searching Functionality</li>
+<li>filtering by colours</li>
+
   <li>Filtering by colors</li>
   <li>Searching Functionality</li>
+
   <li>Pagination</li>
 </ul>
 
