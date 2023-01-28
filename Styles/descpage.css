@@ -465,4 +465,83 @@ h5{
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
    }
+
 }
+@media all and (min-width:320px) and (max-width:780px) {
+   #logo{
+      display:none
+             }
+             #banner{
+               display:flex;
+               flex-direction: column;
+               border:1px solid red
+            }
+   #nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+   }
+
+   #inp {
+      display: none
+   }
+
+   #searchBtn {
+      display: none
+   }
+
+   #nav-third-div {
+      width: 65%;
+   }
+
+   .nav2 {
+      display: none;
+      /* grid-template-columns: repeat(5,1fr); */
+   }
+
+   .nav2:hover {
+      display: block;
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .container{
+      display:flex;
+      flex-direction: column;
+
+   }
+   
+   .category>div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 60%;
+      margin: auto;
+      /* margin-right:10%;  */
+   }
+   #banner{
+      display:none
+   }
+   /* h1{
+      display:none
+   } */
+   .swiper{
+      border:0px solid black;
+      width:100%;
+     
+   }
+   #yoga{
+      display:none
+   }
+   .footer{
+      display:flex;
+      flex-wrap: wrap;
+   }
+   #pTag{
+      display:flex;
+      flex-wrap: wrap; 
+   }
+}
+
+/* Till here */
+
+}
+

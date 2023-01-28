@@ -17,9 +17,14 @@
     padding: 5px;
     align-items: center;
     padding-right: 20px;
- }
+
+    margin-top: -10px;
+}
+
+
  
  #logo:hover {
+
     cursor: pointer;
  }
  
