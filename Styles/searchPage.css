@@ -427,7 +427,7 @@ body{
       transform: rotate(360deg);
    }
 }
- @media all and (min-width:510px) and (max-width:1500px){
+ @media all and (min-width:510px) and (max-width:1100px){
    #logo{
 display:none
    }
