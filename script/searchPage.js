@@ -74,7 +74,7 @@ function Search() {
     })
 }
 
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 const cont = document.getElementById("search-results");
 let searchKeyword = JSON.parse(localStorage.getItem("search"));
 let Data; // 12 products of present page

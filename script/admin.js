@@ -1,4 +1,4 @@
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function () {

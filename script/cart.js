@@ -77,7 +77,7 @@ function Search() {
 
 
 var user = JSON.parse(localStorage.getItem("user"));
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 var container = document.getElementById("card-items");
 var Data;
 var fullData;

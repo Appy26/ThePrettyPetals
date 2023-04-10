@@ -76,7 +76,7 @@ function Search() {
 
 let productData = JSON.parse(localStorage.getItem("product"));
 const cont = document.getElementById("container");
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 
 createDOM();
 function createDOM() {

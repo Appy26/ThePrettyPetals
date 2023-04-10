@@ -60,7 +60,7 @@ function Search() {
     })
 }
 
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 let userData = JSON.parse(localStorage.getItem("user"));
 
 createDOM();

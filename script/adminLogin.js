@@ -1,7 +1,7 @@
 // navigation page
 
 // navigation bar
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 const form = document.querySelector("form");
 
 // navigation bar

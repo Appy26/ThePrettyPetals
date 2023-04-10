@@ -1,6 +1,6 @@
 
 let data = JSON.parse(localStorage.getItem("admin_data"));
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 
 document.querySelector("#admin_name").innerText = localStorage.getItem("admin_name")
 // document.querySelector("#img_nav").setAttribute("src", data.usertype);

@@ -71,7 +71,7 @@ function Search() {
     })
 }
 
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 let form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {

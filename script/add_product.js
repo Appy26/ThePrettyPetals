@@ -4,7 +4,7 @@ let data = JSON.parse(localStorage.getItem("admin_data"));
 document.querySelector("#admin_name").innerText = localStorage.getItem("admin_name")
 // document.querySelector("#img_nav").setAttribute("src", data.usertype);
 
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function () {

@@ -62,7 +62,7 @@ function Search() {
 
 
 
-const url = `https://jsson-testing.onrender.com/`;
+const url = `https://the-pretty-petals-backend.onrender.com/`;
 const form = document.querySelector("form");
 
 
@@ -119,6 +119,7 @@ form.addEventListener("submit",(e)=>{
                 body: JSON.stringify(data)
             })
             let result = await request.json();
+            console.log(result);
 
             if(request.ok){
                 if(window.confirm("Registration Successful. Click 'OK' to Login")){
