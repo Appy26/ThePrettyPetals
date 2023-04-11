@@ -7,7 +7,7 @@ This is the photos of the The Pretty Petals website. The Pretty Petals is an onl
 
 **To see the live site click the below link.**
 
-https://dulcet-figolla-1e3b3e.netlify.app
+https://theprettypetals.netlify.app
 
 ## Built with
 <ul>
